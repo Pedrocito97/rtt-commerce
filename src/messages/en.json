@@ -1,0 +1,242 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "jobs": "Jobs",
+    "events": "Events",
+    "blog": "Blog",
+    "contact": "Contact",
+    "apply": "Apply Now!"
+  },
+  "hero": {
+    "badge": "Welcome to RTT Commerce",
+    "title1": "Unlock your",
+    "titleHighlight": "sales potential",
+    "title2": "with RTT Commerce",
+    "subtitle": "Join our young and innovative team for constant support, dynamic events, and B2B campaigns helping you discover your potential and launch a successful sales career.",
+    "cta1": "Apply Now!",
+    "cta2": "Explore your future",
+    "stat1": "Founded",
+    "stat2": "Team Members",
+    "stat3": "Belgium-wide"
+  },
+  "partners": {
+    "title": "Trusted by leading companies"
+  },
+  "values": {
+    "title": "Why choose RTT Commerce?",
+    "subtitle": "Join our team for constant support, dynamic events, and B2B campaigns helping you discover your potential.",
+    "value1": {
+      "title": "Flexible support and freedom",
+      "description": "We provide supportive flexibility allowing you to grow at your own pace while having the backing of an experienced team."
+    },
+    "value2": {
+      "title": "Career training opportunities",
+      "description": "Comprehensive training programs with personal coaching to develop into innovative coaches or business developers."
+    },
+    "value3": {
+      "title": "Launch your sales career",
+      "description": "Hands-on experience in sales and marketing with direct support to help you discover your potential."
+    },
+    "value4": {
+      "title": "Young & innovative team",
+      "description": "Join our dynamic team of young, energetic professionals passionate about stimulating business growth."
+    },
+    "value5": {
+      "title": "Franchise growth opportunities",
+      "description": "Opportunities to grow into leadership roles managing sales teams or offices across Belgium."
+    },
+    "value6": {
+      "title": "Experience through internships",
+      "description": "Internships designed to prepare students for real-world experience with practical learning opportunities."
+    }
+  },
+  "about": {
+    "badge": "About Us",
+    "title": "Rapid growth in sales and marketing expertise in Belgium",
+    "description1": "RTT Commerce supports businesses in growth. Scalable sales and marketing services tailored to specific business needs. Founded in 2017 in Antwerp, we've expanded to become a leading regional name by 2020, now pursuing a strong presence across all of Belgium.",
+    "description2": "Our team is passionate about empowering young talent through personal sales and marketing specialization, offering customized services that help businesses achieve their growth objectives.",
+    "cta": "Explore your future",
+    "founded": "Founded",
+    "teamMembers": "Team Members",
+    "clients": "Clients",
+    "nationwide": "Nationwide",
+    "mission": {
+      "title": "Mission",
+      "description": "Empowering young talent through personal sales and marketing specialization, helping businesses achieve their growth objectives."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "To be Belgium's leading provider of scalable sales and marketing services, known for developing exceptional talent."
+    },
+    "valuesSection": {
+      "title": "Values",
+      "description": "Flexibility, growth, innovation, and support. We believe in nurturing potential and creating opportunities."
+    },
+    "journeyTitle": "Our Journey",
+    "journeySubtitle": "From a small startup in Antwerp to a Belgium-wide presence.",
+    "timeline": {
+      "2017": {
+        "title": "Founded in Antwerp",
+        "description": "RTT Commerce was founded with a vision to empower young talent through personal sales and marketing."
+      },
+      "2020": {
+        "title": "Regional expansion",
+        "description": "Expanded to become a leading regional name in Belgium's sales and marketing industry."
+      },
+      "now": {
+        "year": "Now",
+        "title": "Belgium-wide presence",
+        "description": "Now pursuing a strong presence across all of Belgium with offices in Brussels and beyond."
+      }
+    },
+    "teamTitle": "Meet Our Team",
+    "teamSubtitle": "The passionate people behind RTT Commerce."
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Scalable sales and marketing services tailored to specific business needs.",
+    "service1": {
+      "title": "Networking",
+      "description": "Making strong impressions in networking and building valuable professional connections."
+    },
+    "service2": {
+      "title": "Personal Sales",
+      "description": "Personal sales relationship-building with focus on customer satisfaction and retention."
+    },
+    "service3": {
+      "title": "Partnerships",
+      "description": "Sales success through partnerships, leveraging collaborative relationships for mutual growth."
+    },
+    "service4": {
+      "title": "Events",
+      "description": "Revenue-generating events that create memorable experiences and business opportunities."
+    },
+    "service5": {
+      "title": "Freelancer Growth",
+      "description": "Freelancer-focused growth models with flexibility and support for independent professionals."
+    },
+    "service6": {
+      "title": "Franchise",
+      "description": "Franchise growth opportunities for ambitious individuals looking to lead their own teams."
+    }
+  },
+  "testimonials": {
+    "title": "What our team says",
+    "subtitle": "Hear from the people who have grown with RTT Commerce."
+  },
+  "events": {
+    "title": "Events",
+    "subtitle": "Join us at our dynamic events across Europe. Check out highlights from our recent gatherings.",
+    "pageTitle": "Join us at our events",
+    "pageSubtitle": "Dynamic events across Europe. Connect, learn, and grow with the RTT Commerce community.",
+    "upcoming": "Upcoming Events",
+    "upcomingSubtitle": "Don't miss our next gathering. Reserve your spot today.",
+    "past": "Past Events",
+    "pastSubtitle": "Check out highlights from our recent gatherings across Europe.",
+    "registerInterest": "Register Interest",
+    "dontMissOut": "Don't miss out!",
+    "joinTeam": "Join our team and be part of these amazing events and networking opportunities."
+  },
+  "blog": {
+    "title": "Latest from our Blog",
+    "subtitle": "Insights, tips, and stories from the world of sales and marketing.",
+    "readMore": "Read more",
+    "viewAll": "View all posts",
+    "pageTitle": "Insights & Stories",
+    "pageSubtitle": "Tips, insights, and stories from the world of sales and marketing. Stay updated with the latest trends.",
+    "searchPlaceholder": "Search articles...",
+    "noResults": "No articles found matching your search.",
+    "clearFilters": "Clear filters",
+    "loadMore": "Load more articles",
+    "stayUpdated": "Stay Updated",
+    "newsletterSubtitle": "Subscribe to our newsletter for the latest insights and career tips.",
+    "emailPlaceholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "privacyNote": "We respect your privacy. Unsubscribe at any time."
+  },
+  "cta": {
+    "badge": "Start your journey today",
+    "title": "Ready for a career leap?",
+    "subtitle": "Take the step towards the future of direct sales. Join our team and unlock your full potential with RTT Commerce.",
+    "button1": "Apply Now!",
+    "button2": "Contact Us",
+    "trust1": "Response within 24 hours",
+    "trust2": "No experience required",
+    "trust3": "Training included"
+  },
+  "footer": {
+    "description": "RTT Commerce supports businesses in growth. Scalable sales and marketing services tailored to specific business needs.",
+    "company": "Company",
+    "support": "Support",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved.",
+    "followUs": "Follow Us"
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Get in Touch",
+    "subtitle": "Have questions? We're here to help. Reach out to us and we'll get back to you as soon as possible.",
+    "formTitle": "Send us a message",
+    "name": "Name",
+    "phone": "Phone Number",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent!",
+    "successMessage": "We'll get back to you as soon as possible.",
+    "address": "Address",
+    "openingHours": "Opening Hours",
+    "followUs": "Follow Us"
+  },
+  "apply": {
+    "badge": "Apply",
+    "title": "Start your career at RTT Commerce",
+    "subtitle": "Sign up and start your journey! Join our young and innovative team for constant support and growth opportunities.",
+    "benefit1": "Response within 24 hours",
+    "benefit1Desc": "We value your time and will get back to you quickly.",
+    "benefit2": "No experience required",
+    "benefit2Desc": "We provide comprehensive training for all new team members.",
+    "benefit3": "Join a young team",
+    "benefit3Desc": "Work with dynamic professionals in a supportive environment.",
+    "step1": "Personal Information",
+    "step1Desc": "Tell us a bit about yourself.",
+    "step2": "Position",
+    "step2Desc": "Which position are you interested in?",
+    "step3": "Tell us about yourself",
+    "step3Desc": "Why are you interested in RTT Commerce?",
+    "position": "Position",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Apply Now!",
+    "successTitle": "Application submitted!",
+    "successMessage": "Thank you for your interest in RTT Commerce. We'll contact you within 24 hours.",
+    "backHome": "Back to home",
+    "stepOf": "Step {step} of {total}",
+    "complete": "% complete"
+  },
+  "jobs": {
+    "badge": "Jobs",
+    "title": "Start your career at RTT Commerce",
+    "subtitle": "Join our young and innovative team. We're always looking for talented individuals who want to grow with us.",
+    "search": "Search positions...",
+    "allDepartments": "All Departments",
+    "requirements": "Requirements",
+    "benefits": "Benefits",
+    "applyNow": "Apply Now",
+    "moreOpportunities": "More Opportunities",
+    "moreSubtitle": "Don't see the perfect role? We're always looking for talented people.",
+    "internships": "Internships",
+    "internshipsDesc": "Internships designed to prepare students for real-world experience with practical learning opportunities.",
+    "businessDev": "Business Development",
+    "businessDevDesc": "Opportunities to grow into leadership roles managing sales teams or offices across Belgium.",
+    "learnMore": "Learn more",
+    "readyToApply": "Ready to apply?",
+    "readySubtitle": "Receive a response within 24 hours. Start your journey with RTT Commerce today.",
+    "noResults": "No positions found matching your criteria."
+  }
+}

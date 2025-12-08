@@ -1,0 +1,242 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Over ons",
+    "jobs": "Vacatures",
+    "events": "Evenementen",
+    "blog": "Blog",
+    "contact": "Contact",
+    "apply": "Solliciteer nu!"
+  },
+  "hero": {
+    "badge": "Welkom bij RTT Commerce",
+    "title1": "Unlock your",
+    "titleHighlight": "sales potential",
+    "title2": "with RTT Commerce",
+    "subtitle": "Sluit je aan bij ons jonge en innovatieve team voor constante ondersteuning, dynamische evenementen en B2B-campagnes die je helpen je potentieel te ontdekken en een succesvolle verkoopcarrière te lanceren.",
+    "cta1": "Solliciteer nu!",
+    "cta2": "Ontdek je toekomst",
+    "stat1": "Opgericht",
+    "stat2": "Team Members",
+    "stat3": "Belgium-wide"
+  },
+  "partners": {
+    "title": "Vertrouwd door toonaangevende bedrijven"
+  },
+  "values": {
+    "title": "Waarom kiezen voor RTT Commerce?",
+    "subtitle": "Sluit je aan bij ons team voor constante ondersteuning, dynamische evenementen en B2B-campagnes die je helpen je potentieel te ontdekken.",
+    "value1": {
+      "title": "Flexibele ondersteuning en vrijheid",
+      "description": "Wij bieden flexibele ondersteuning waardoor je in je eigen tempo kunt groeien terwijl je de steun hebt van een ervaren team."
+    },
+    "value2": {
+      "title": "Carrière trainingsmogelijkheden",
+      "description": "Uitgebreide trainingsprogramma's met persoonlijke coaching om je te ontwikkelen tot innovatieve coaches of business developers."
+    },
+    "value3": {
+      "title": "Lanceer je verkoopcarrière",
+      "description": "Hands-on ervaring in verkoop en marketing met directe ondersteuning om je te helpen je potentieel te ontdekken."
+    },
+    "value4": {
+      "title": "Jong & innovatief team",
+      "description": "Word lid van ons dynamische team van jonge, energieke professionals die gepassioneerd zijn door bedrijfsgroei."
+    },
+    "value5": {
+      "title": "Franchise groeimogelijkheden",
+      "description": "Mogelijkheden om door te groeien naar leiderschapsrollen waarbij je verkoopteams of kantoren in heel België beheert."
+    },
+    "value6": {
+      "title": "Ervaring door stages",
+      "description": "Stages ontworpen om studenten voor te bereiden op praktijkervaring met praktische leermogelijkheden."
+    }
+  },
+  "about": {
+    "badge": "Over ons",
+    "title": "Snelle groei in verkoop- en marketingexpertise in België",
+    "description1": "RTT Commerce ondersteunt bedrijven bij groei. Schaalbare verkoop- en marketingdiensten op maat van specifieke bedrijfsbehoeften. Opgericht in 2017 in Antwerpen, zijn we uitgegroeid tot een toonaangevende regionale naam tegen 2020, en streven we nu naar een sterke aanwezigheid in heel België.",
+    "description2": "Ons team is gepassioneerd over het empoweren van jong talent door persoonlijke verkoop- en marketingspecialisatie, en biedt op maat gemaakte diensten die bedrijven helpen hun groeidoelstellingen te bereiken.",
+    "cta": "Ontdek je toekomst",
+    "founded": "Opgericht",
+    "teamMembers": "Team Members",
+    "clients": "Klanten",
+    "nationwide": "Landelijk",
+    "mission": {
+      "title": "Missie",
+      "description": "Jong talent empoweren door persoonlijke verkoop- en marketingspecialisatie, en bedrijven helpen hun groeidoelstellingen te bereiken."
+    },
+    "vision": {
+      "title": "Visie",
+      "description": "De toonaangevende leverancier van schaalbare verkoop- en marketingdiensten in België worden, bekend om het ontwikkelen van uitzonderlijk talent."
+    },
+    "valuesSection": {
+      "title": "Waarden",
+      "description": "Flexibiliteit, groei, innovatie en ondersteuning. Wij geloven in het koesteren van potentieel en het creëren van kansen."
+    },
+    "journeyTitle": "Onze Reis",
+    "journeySubtitle": "Van een kleine startup in Antwerpen tot een landelijke aanwezigheid.",
+    "timeline": {
+      "2017": {
+        "title": "Opgericht in Antwerpen",
+        "description": "RTT Commerce werd opgericht met een visie om jong talent te empoweren door persoonlijke verkoop en marketing."
+      },
+      "2020": {
+        "title": "Regionale expansie",
+        "description": "Uitgebreid tot een toonaangevende regionale naam in de Belgische verkoop- en marketingindustrie."
+      },
+      "now": {
+        "year": "Nu",
+        "title": "Landelijke aanwezigheid",
+        "description": "Nu streven naar een sterke aanwezigheid in heel België met kantoren in Brussel en daarbuiten."
+      }
+    },
+    "teamTitle": "Ontmoet Ons Team",
+    "teamSubtitle": "De gepassioneerde mensen achter RTT Commerce."
+  },
+  "services": {
+    "title": "Onze Diensten",
+    "subtitle": "Schaalbare verkoop- en marketingdiensten op maat van specifieke bedrijfsbehoeften.",
+    "service1": {
+      "title": "Netwerken",
+      "description": "Sterke indrukken maken in netwerken en waardevolle professionele connecties opbouwen."
+    },
+    "service2": {
+      "title": "Persoonlijke Verkoop",
+      "description": "Persoonlijke verkooprelaties opbouwen met focus op klanttevredenheid en retentie."
+    },
+    "service3": {
+      "title": "Partnerships",
+      "description": "Verkoopsucces door partnerships, het benutten van samenwerkingsverbanden voor wederzijdse groei."
+    },
+    "service4": {
+      "title": "Evenementen",
+      "description": "Omzet genererende evenementen die memorabele ervaringen en zakelijke kansen creëren."
+    },
+    "service5": {
+      "title": "Freelancer Groei",
+      "description": "Op freelancers gerichte groeimodellen met flexibiliteit en ondersteuning voor zelfstandige professionals."
+    },
+    "service6": {
+      "title": "Franchise",
+      "description": "Franchise groeimogelijkheden voor ambitieuze individuen die hun eigen teams willen leiden."
+    }
+  },
+  "testimonials": {
+    "title": "Wat ons team zegt",
+    "subtitle": "Hoor van de mensen die zijn gegroeid met RTT Commerce."
+  },
+  "events": {
+    "title": "Evenementen",
+    "subtitle": "Sluit je bij ons aan op onze dynamische evenementen in heel Europa. Bekijk hoogtepunten van onze recente bijeenkomsten.",
+    "pageTitle": "Sluit je aan bij onze evenementen",
+    "pageSubtitle": "Dynamische evenementen in heel Europa. Verbind, leer en groei met de RTT Commerce community.",
+    "upcoming": "Aankomende Evenementen",
+    "upcomingSubtitle": "Mis onze volgende bijeenkomst niet. Reserveer vandaag je plek.",
+    "past": "Vorige Evenementen",
+    "pastSubtitle": "Bekijk hoogtepunten van onze recente bijeenkomsten in heel Europa.",
+    "registerInterest": "Interesse registreren",
+    "dontMissOut": "Mis het niet!",
+    "joinTeam": "Sluit je aan bij ons team en maak deel uit van deze geweldige evenementen en netwerkmogelijkheden."
+  },
+  "blog": {
+    "title": "Laatste van onze Blog",
+    "subtitle": "Inzichten, tips en verhalen uit de wereld van verkoop en marketing.",
+    "readMore": "Lees meer",
+    "viewAll": "Bekijk alle berichten",
+    "pageTitle": "Inzichten & Verhalen",
+    "pageSubtitle": "Tips, inzichten en verhalen uit de wereld van verkoop en marketing. Blijf op de hoogte van de laatste trends.",
+    "searchPlaceholder": "Zoek artikelen...",
+    "noResults": "Geen artikelen gevonden die aan je zoekopdracht voldoen.",
+    "clearFilters": "Filters wissen",
+    "loadMore": "Meer artikelen laden",
+    "stayUpdated": "Blijf op de hoogte",
+    "newsletterSubtitle": "Abonneer op onze nieuwsbrief voor de laatste inzichten en carrièretips.",
+    "emailPlaceholder": "Voer je e-mail in",
+    "subscribe": "Abonneren",
+    "privacyNote": "We respecteren je privacy. Je kunt je op elk moment afmelden."
+  },
+  "cta": {
+    "badge": "Start vandaag je reis",
+    "title": "Klaar voor een carrièresprong?",
+    "subtitle": "Zet de stap naar de toekomst van directe verkoop. Sluit je aan bij ons team en ontgrendel je volledige potentieel met RTT Commerce.",
+    "button1": "Solliciteer nu!",
+    "button2": "Neem contact op",
+    "trust1": "Reactie binnen 24 uur",
+    "trust2": "Geen ervaring vereist",
+    "trust3": "Training inbegrepen"
+  },
+  "footer": {
+    "description": "RTT Commerce ondersteunt bedrijven bij groei. Schaalbare verkoop- en marketingdiensten op maat van specifieke bedrijfsbehoeften.",
+    "company": "Bedrijf",
+    "support": "Ondersteuning",
+    "contact": "Contact",
+    "privacy": "Privacybeleid",
+    "terms": "Servicevoorwaarden",
+    "rights": "Alle rechten voorbehouden.",
+    "followUs": "Volg ons"
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Neem contact op",
+    "subtitle": "Heb je vragen? Wij zijn er om te helpen. Neem contact met ons op en we nemen zo snel mogelijk contact met je op.",
+    "formTitle": "Stuur ons een bericht",
+    "name": "Naam",
+    "phone": "Telefoonnummer",
+    "email": "E-mail",
+    "subject": "Onderwerp",
+    "message": "Bericht",
+    "send": "Verzenden",
+    "sending": "Verzenden...",
+    "success": "Bericht verzonden!",
+    "successMessage": "We nemen zo snel mogelijk contact met je op.",
+    "address": "Adres",
+    "openingHours": "Openingstijden",
+    "followUs": "Volg ons"
+  },
+  "apply": {
+    "badge": "Solliciteer",
+    "title": "Start je carrière bij RTT Commerce",
+    "subtitle": "Meld je aan en begin je reis! Sluit je aan bij ons jonge en innovatieve team voor constante ondersteuning en groeimogelijkheden.",
+    "benefit1": "Reactie binnen 24 uur",
+    "benefit1Desc": "We waarderen je tijd en nemen snel contact met je op.",
+    "benefit2": "Geen ervaring vereist",
+    "benefit2Desc": "We bieden uitgebreide training voor alle nieuwe teamleden.",
+    "benefit3": "Word lid van een jong team",
+    "benefit3Desc": "Werk met dynamische professionals in een ondersteunende omgeving.",
+    "step1": "Persoonlijke Informatie",
+    "step1Desc": "Vertel ons iets over jezelf.",
+    "step2": "Positie",
+    "step2Desc": "In welke functie ben je geïnteresseerd?",
+    "step3": "Vertel ons over jezelf",
+    "step3Desc": "Waarom ben je geïnteresseerd in RTT Commerce?",
+    "position": "Vacature",
+    "next": "Volgende",
+    "previous": "Vorige",
+    "submit": "Solliciteer nu!",
+    "successTitle": "Sollicitatie verzonden!",
+    "successMessage": "Bedankt voor je interesse in RTT Commerce. We nemen binnen 24 uur contact met je op.",
+    "backHome": "Terug naar home",
+    "stepOf": "Stap {step} van {total}",
+    "complete": "% voltooid"
+  },
+  "jobs": {
+    "badge": "Vacatures",
+    "title": "Start je carrière bij RTT Commerce",
+    "subtitle": "Sluit je aan bij ons jonge en innovatieve team. We zijn altijd op zoek naar getalenteerde mensen die met ons willen groeien.",
+    "search": "Zoek posities...",
+    "allDepartments": "Alle Afdelingen",
+    "requirements": "Vereisten",
+    "benefits": "Voordelen",
+    "applyNow": "Solliciteer nu",
+    "moreOpportunities": "Meer Mogelijkheden",
+    "moreSubtitle": "Zie je niet de perfecte rol? We zijn altijd op zoek naar getalenteerde mensen.",
+    "internships": "Stageplaatsen",
+    "internshipsDesc": "Stages ontworpen om studenten voor te bereiden op praktijkervaring met praktische leermogelijkheden.",
+    "businessDev": "Business Development",
+    "businessDevDesc": "Mogelijkheden om door te groeien naar leiderschapsrollen waarbij je verkoopteams of kantoren in heel België beheert.",
+    "learnMore": "Meer informatie",
+    "readyToApply": "Klaar om te solliciteren?",
+    "readySubtitle": "Ontvang binnen 24 uur antwoord. Start vandaag je reis met RTT Commerce.",
+    "noResults": "Geen posities gevonden die aan je criteria voldoen."
+  }
+}

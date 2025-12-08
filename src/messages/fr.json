@@ -1,0 +1,242 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "jobs": "Emplois",
+    "events": "Événements",
+    "blog": "Blog",
+    "contact": "Contact",
+    "apply": "Postuler maintenant!"
+  },
+  "hero": {
+    "badge": "Bienvenue chez RTT Commerce",
+    "title1": "Libérez votre",
+    "titleHighlight": "potentiel commercial",
+    "title2": "avec RTT Commerce",
+    "subtitle": "Rejoignez notre équipe jeune et innovante pour un soutien constant, des événements dynamiques et des campagnes B2B qui vous aident à découvrir votre potentiel et à lancer une carrière commerciale réussie.",
+    "cta1": "Postuler maintenant!",
+    "cta2": "Explorez votre avenir",
+    "stat1": "Fondé",
+    "stat2": "Membres de l'équipe",
+    "stat3": "Dans toute la Belgique"
+  },
+  "partners": {
+    "title": "Approuvé par des entreprises de premier plan"
+  },
+  "values": {
+    "title": "Pourquoi choisir RTT Commerce?",
+    "subtitle": "Rejoignez notre équipe pour un soutien constant, des événements dynamiques et des campagnes B2B qui vous aident à découvrir votre potentiel.",
+    "value1": {
+      "title": "Soutien flexible et liberté",
+      "description": "Nous offrons une flexibilité de soutien vous permettant de progresser à votre rythme tout en bénéficiant de l'appui d'une équipe expérimentée."
+    },
+    "value2": {
+      "title": "Opportunités de formation professionnelle",
+      "description": "Programmes de formation complets avec coaching personnel pour devenir des coachs innovants ou des développeurs d'affaires."
+    },
+    "value3": {
+      "title": "Lancez votre carrière commerciale",
+      "description": "Expérience pratique en vente et marketing avec un soutien direct pour vous aider à découvrir votre potentiel."
+    },
+    "value4": {
+      "title": "Équipe jeune et innovante",
+      "description": "Rejoignez notre équipe dynamique de jeunes professionnels énergiques passionnés par la croissance des entreprises."
+    },
+    "value5": {
+      "title": "Opportunités de croissance en franchise",
+      "description": "Possibilités d'évoluer vers des rôles de leadership en gérant des équipes de vente ou des bureaux à travers la Belgique."
+    },
+    "value6": {
+      "title": "Expérience par les stages",
+      "description": "Stages conçus pour préparer les étudiants à l'expérience du monde réel avec des opportunités d'apprentissage pratique."
+    }
+  },
+  "about": {
+    "badge": "À propos",
+    "title": "Croissance rapide dans l'expertise en vente et marketing en Belgique",
+    "description1": "RTT Commerce soutient les entreprises dans leur croissance. Services de vente et de marketing évolutifs adaptés aux besoins spécifiques des entreprises. Fondée en 2017 à Anvers, nous sommes devenus un nom régional de premier plan en 2020, et nous visons maintenant une forte présence dans toute la Belgique.",
+    "description2": "Notre équipe est passionnée par l'autonomisation des jeunes talents grâce à la spécialisation en vente et marketing personnel, offrant des services personnalisés qui aident les entreprises à atteindre leurs objectifs de croissance.",
+    "cta": "Explorez votre avenir",
+    "founded": "Fondé",
+    "teamMembers": "Membres de l'équipe",
+    "clients": "Clients",
+    "nationwide": "National",
+    "mission": {
+      "title": "Mission",
+      "description": "Autonomiser les jeunes talents grâce à la spécialisation en vente et marketing personnel, aider les entreprises à atteindre leurs objectifs de croissance."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "Devenir le principal fournisseur de services de vente et de marketing évolutifs en Belgique, reconnu pour le développement de talents exceptionnels."
+    },
+    "valuesSection": {
+      "title": "Valeurs",
+      "description": "Flexibilité, croissance, innovation et soutien. Nous croyons en la culture du potentiel et la création d'opportunités."
+    },
+    "journeyTitle": "Notre Parcours",
+    "journeySubtitle": "D'une petite startup à Anvers à une présence nationale.",
+    "timeline": {
+      "2017": {
+        "title": "Fondé à Anvers",
+        "description": "RTT Commerce a été fondée avec la vision d'autonomiser les jeunes talents grâce à la vente et au marketing personnels."
+      },
+      "2020": {
+        "title": "Expansion régionale",
+        "description": "Expansion pour devenir un nom régional de premier plan dans l'industrie belge de la vente et du marketing."
+      },
+      "now": {
+        "year": "Maintenant",
+        "title": "Présence nationale",
+        "description": "Nous visons maintenant une forte présence dans toute la Belgique avec des bureaux à Bruxelles et au-delà."
+      }
+    },
+    "teamTitle": "Rencontrez Notre Équipe",
+    "teamSubtitle": "Les personnes passionnées derrière RTT Commerce."
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Services de vente et de marketing évolutifs adaptés aux besoins spécifiques des entreprises.",
+    "service1": {
+      "title": "Réseautage",
+      "description": "Faire forte impression dans le réseautage et établir des connexions professionnelles précieuses."
+    },
+    "service2": {
+      "title": "Vente Personnelle",
+      "description": "Établissement de relations de vente personnelles axées sur la satisfaction et la fidélisation des clients."
+    },
+    "service3": {
+      "title": "Partenariats",
+      "description": "Succès commercial grâce aux partenariats, en tirant parti des relations collaboratives pour une croissance mutuelle."
+    },
+    "service4": {
+      "title": "Événements",
+      "description": "Événements générateurs de revenus créant des expériences mémorables et des opportunités d'affaires."
+    },
+    "service5": {
+      "title": "Croissance Freelance",
+      "description": "Modèles de croissance axés sur les freelances avec flexibilité et soutien pour les professionnels indépendants."
+    },
+    "service6": {
+      "title": "Franchise",
+      "description": "Opportunités de croissance en franchise pour les personnes ambitieuses souhaitant diriger leurs propres équipes."
+    }
+  },
+  "testimonials": {
+    "title": "Ce que dit notre équipe",
+    "subtitle": "Écoutez les personnes qui ont grandi avec RTT Commerce."
+  },
+  "events": {
+    "title": "Événements",
+    "subtitle": "Rejoignez-nous lors de nos événements dynamiques à travers l'Europe. Découvrez les moments forts de nos récentes rencontres.",
+    "pageTitle": "Rejoignez-nous à nos événements",
+    "pageSubtitle": "Événements dynamiques à travers l'Europe. Connectez-vous, apprenez et grandissez avec la communauté RTT Commerce.",
+    "upcoming": "Événements à Venir",
+    "upcomingSubtitle": "Ne manquez pas notre prochaine rencontre. Réservez votre place aujourd'hui.",
+    "past": "Événements Passés",
+    "pastSubtitle": "Découvrez les moments forts de nos récentes rencontres à travers l'Europe.",
+    "registerInterest": "Manifester son intérêt",
+    "dontMissOut": "Ne manquez pas!",
+    "joinTeam": "Rejoignez notre équipe et participez à ces événements incroyables et opportunités de réseautage."
+  },
+  "blog": {
+    "title": "Dernières nouvelles de notre Blog",
+    "subtitle": "Perspectives, conseils et histoires du monde de la vente et du marketing.",
+    "readMore": "Lire la suite",
+    "viewAll": "Voir tous les articles",
+    "pageTitle": "Perspectives & Histoires",
+    "pageSubtitle": "Conseils, perspectives et histoires du monde de la vente et du marketing. Restez informé des dernières tendances.",
+    "searchPlaceholder": "Rechercher des articles...",
+    "noResults": "Aucun article trouvé correspondant à votre recherche.",
+    "clearFilters": "Effacer les filtres",
+    "loadMore": "Charger plus d'articles",
+    "stayUpdated": "Restez Informé",
+    "newsletterSubtitle": "Abonnez-vous à notre newsletter pour les dernières perspectives et conseils de carrière.",
+    "emailPlaceholder": "Entrez votre email",
+    "subscribe": "S'abonner",
+    "privacyNote": "Nous respectons votre vie privée. Désabonnez-vous à tout moment."
+  },
+  "cta": {
+    "badge": "Commencez votre voyage aujourd'hui",
+    "title": "Prêt pour un saut de carrière?",
+    "subtitle": "Faites le pas vers l'avenir de la vente directe. Rejoignez notre équipe et libérez votre plein potentiel avec RTT Commerce.",
+    "button1": "Postuler maintenant!",
+    "button2": "Contactez-nous",
+    "trust1": "Réponse sous 24 heures",
+    "trust2": "Aucune expérience requise",
+    "trust3": "Formation incluse"
+  },
+  "footer": {
+    "description": "RTT Commerce soutient les entreprises dans leur croissance. Services de vente et de marketing évolutifs adaptés aux besoins spécifiques des entreprises.",
+    "company": "Entreprise",
+    "support": "Support",
+    "contact": "Contact",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "rights": "Tous droits réservés.",
+    "followUs": "Suivez-nous"
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Contactez-nous",
+    "subtitle": "Vous avez des questions? Nous sommes là pour vous aider. Contactez-nous et nous vous répondrons dès que possible.",
+    "formTitle": "Envoyez-nous un message",
+    "name": "Nom",
+    "phone": "Numéro de téléphone",
+    "email": "Email",
+    "subject": "Sujet",
+    "message": "Message",
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé!",
+    "successMessage": "Nous vous répondrons dès que possible.",
+    "address": "Adresse",
+    "openingHours": "Heures d'ouverture",
+    "followUs": "Suivez-nous"
+  },
+  "apply": {
+    "badge": "Postuler",
+    "title": "Commencez votre carrière chez RTT Commerce",
+    "subtitle": "Inscrivez-vous et commencez votre voyage! Rejoignez notre équipe jeune et innovante pour un soutien constant et des opportunités de croissance.",
+    "benefit1": "Réponse sous 24 heures",
+    "benefit1Desc": "Nous valorisons votre temps et vous répondrons rapidement.",
+    "benefit2": "Aucune expérience requise",
+    "benefit2Desc": "Nous offrons une formation complète pour tous les nouveaux membres de l'équipe.",
+    "benefit3": "Rejoignez une jeune équipe",
+    "benefit3Desc": "Travaillez avec des professionnels dynamiques dans un environnement de soutien.",
+    "step1": "Informations Personnelles",
+    "step1Desc": "Parlez-nous un peu de vous.",
+    "step2": "Poste",
+    "step2Desc": "Quel poste vous intéresse?",
+    "step3": "Parlez-nous de vous",
+    "step3Desc": "Pourquoi êtes-vous intéressé par RTT Commerce?",
+    "position": "Poste",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "submit": "Postuler maintenant!",
+    "successTitle": "Candidature envoyée!",
+    "successMessage": "Merci pour votre intérêt pour RTT Commerce. Nous vous contacterons dans les 24 heures.",
+    "backHome": "Retour à l'accueil",
+    "stepOf": "Étape {step} sur {total}",
+    "complete": "% complété"
+  },
+  "jobs": {
+    "badge": "Emplois",
+    "title": "Commencez votre carrière chez RTT Commerce",
+    "subtitle": "Rejoignez notre équipe jeune et innovante. Nous sommes toujours à la recherche de personnes talentueuses qui veulent grandir avec nous.",
+    "search": "Rechercher des postes...",
+    "allDepartments": "Tous les départements",
+    "requirements": "Exigences",
+    "benefits": "Avantages",
+    "applyNow": "Postuler maintenant",
+    "moreOpportunities": "Plus d'opportunités",
+    "moreSubtitle": "Vous ne voyez pas le rôle parfait? Nous sommes toujours à la recherche de personnes talentueuses.",
+    "internships": "Stages",
+    "internshipsDesc": "Stages conçus pour préparer les étudiants à l'expérience du monde réel avec des opportunités d'apprentissage pratique.",
+    "businessDev": "Développement Commercial",
+    "businessDevDesc": "Possibilités d'évoluer vers des rôles de leadership en gérant des équipes de vente ou des bureaux à travers la Belgique.",
+    "learnMore": "En savoir plus",
+    "readyToApply": "Prêt à postuler?",
+    "readySubtitle": "Recevez une réponse dans les 24 heures. Commencez votre voyage avec RTT Commerce aujourd'hui.",
+    "noResults": "Aucun poste trouvé correspondant à vos critères."
+  }
+}
