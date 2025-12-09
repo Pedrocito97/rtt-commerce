@@ -32,13 +32,7 @@ const events = [
     image: "/images/events/event5.jpg",
     location: "Brussels",
   },
-  {
-    id: 5,
-    title: "Networking Event",
-    image: "/images/events/event6.jpg",
-    location: "Belgium",
-  },
-];
+  ];
 
 export function EventsGallery() {
   const t = useTranslations("events");

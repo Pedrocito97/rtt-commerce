@@ -10,11 +10,11 @@ import { useTranslations } from "next-intl";
 const testimonials = [
   {
     id: 1,
-    name: "Lou",
+    name: "Yaren",
     role: "Brand Ambassador",
     image: "/images/team/lou.jpg",
     content:
-      "Cette expérience me permet de me développer professionnellement et personnellement. Chaque jour est un nouveau challenge et cela me permet de me dépasser !",
+      "Bij RTT Commerce heb ik geleerd om mijn grenzen te verleggen en mezelf te ontwikkelen. De sfeer in het team is ongelooflijk en elke dag is een kans om te groeien!",
     rating: 5,
   },
   {
@@ -28,11 +28,12 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Yaren",
+    name: "Lou",
     role: "Brand Ambassador",
     image: "/images/team/yaren.jpg",
     content:
-      "Bij RTT Commerce heb ik geleerd om mijn grenzen te verleggen en mezelf te ontwikkelen. De sfeer in het team is ongelooflijk en elke dag is een kans om te groeien!",
+    "Cette expérience me permet de me développer professionnellement et personnellement. Chaque jour est un nouveau challenge et cela me permet de me dépasser !",
+      
     rating: 5,
   },
 ];
