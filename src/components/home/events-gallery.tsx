@@ -10,21 +10,21 @@ import { useTranslations } from "next-intl";
 const events = [
   {
     id: 1,
-    title: "Entrepreneur Meet-Up London",
-    image: "/images/events/event1.jpg",
-    location: "London",
+    title: "Rooftop Networking Event",
+    image: "/images/events/rooftop-event.jpg",
+    location: "Brussels",
   },
   {
     id: 2,
-    title: "Entrepreneur Meet-Up",
-    image: "/images/events/event2.jpg",
-    location: "Europe",
+    title: "Annual Conference",
+    image: "/images/conference-room.jpg",
+    location: "Istanbul",
   },
   {
     id: 3,
-    title: "Team Building Event",
-    image: "/images/events/event3.jpg",
-    location: "Brussels",
+    title: "Team Conference",
+    image: "/images/team-conference.webp",
+    location: "Europe",
   },
   {
     id: 4,
@@ -34,15 +34,15 @@ const events = [
   },
   {
     id: 5,
-    title: "Annual Conference",
+    title: "Entrepreneur Meet-Up",
     image: "/images/events/event5.jpg",
     location: "Brussels",
   },
   {
     id: 6,
-    title: "Networking Event",
-    image: "/images/events/event6.jpg",
-    location: "Belgium",
+    title: "Team Building Boat Trip",
+    image: "/images/team-boat.webp",
+    location: "Mediterranean",
   },
 ];
 

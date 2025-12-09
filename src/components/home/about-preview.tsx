@@ -53,7 +53,7 @@ export function AboutPreview() {
         >
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/about-image.jpg"
+              src="/images/team-conference.webp"
               alt="RTT Commerce Team"
               fill
               className="object-cover"
