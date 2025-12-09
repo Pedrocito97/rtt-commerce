@@ -57,6 +57,16 @@ export default function AboutPage() {
       description: t("timeline.2020.description"),
     },
     {
+      year: "2022",
+      title: t("timeline.2022.title"),
+      description: t("timeline.2022.description"),
+    },
+    {
+      year: "2024",
+      title: t("timeline.2024.title"),
+      description: t("timeline.2024.description"),
+    },
+    {
       year: t("timeline.now.year"),
       title: t("timeline.now.title"),
       description: t("timeline.now.description"),
