@@ -22,8 +22,8 @@ const events = [
   },
   {
     id: 3,
-    title: "Team Conference",
-    image: "/images/team-conference.webp",
+    title: "Team Event",
+    image: "/images/events/event3.jpg",
     location: "Europe",
   },
   {
@@ -40,9 +40,9 @@ const events = [
   },
   {
     id: 6,
-    title: "Team Building Boat Trip",
-    image: "/images/team-boat.webp",
-    location: "Mediterranean",
+    title: "Networking Event",
+    image: "/images/events/event6.jpg",
+    location: "Belgium",
   },
 ];
 
