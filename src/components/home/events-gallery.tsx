@@ -28,18 +28,12 @@ const events = [
   },
   {
     id: 4,
-    title: "Sales Training Workshop",
-    image: "/images/events/event4.jpg",
-    location: "Antwerp",
-  },
-  {
-    id: 5,
     title: "Entrepreneur Meet-Up",
     image: "/images/events/event5.jpg",
     location: "Brussels",
   },
   {
-    id: 6,
+    id: 5,
     title: "Networking Event",
     image: "/images/events/event6.jpg",
     location: "Belgium",
