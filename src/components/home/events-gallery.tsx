@@ -22,8 +22,8 @@ const events = [
   },
   {
     id: 3,
-    title: "Team Event",
-    image: "/images/events/event3.jpg",
+    title: "Team Conference",
+    image: "/images/team-conference.webp",
     location: "Europe",
   },
   {
