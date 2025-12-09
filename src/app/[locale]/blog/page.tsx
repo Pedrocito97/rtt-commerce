@@ -20,17 +20,6 @@ const blogPosts = [
     category: "Career",
   },
   {
-    id: 2,
-    title: "De Kunst van B2B Netwerken in België",
-    excerpt:
-      "Effectief netwerken in de Belgische zakelijke wereld vereist een unieke aanpak. Leer de geheimen van succesvolle B2B-relaties in Vlaanderen en Wallonië.",
-    image: "/images/events/rooftop-event.jpg",
-    author: "RTT Commerce Team",
-    date: "2 December 2024",
-    slug: "kunst-b2b-netwerken-belgie",
-    category: "Sales Tips",
-  },
-  {
     id: 3,
     title: "Van Starter tot Team Leader: Jouw Groeipad bij RTT Commerce",
     excerpt:

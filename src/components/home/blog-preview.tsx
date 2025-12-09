@@ -21,13 +21,13 @@ const posts = [
   },
   {
     id: 2,
-    title: "De Kunst van B2B Netwerken in België",
+    title: "Werken als Brand Ambassador: Wat Kun Je Verwachten?",
     excerpt:
-      "Effectief netwerken in de Belgische zakelijke wereld vereist een unieke aanpak. Leer de geheimen van succesvolle B2B-relaties.",
-    image: "/images/events/rooftop-event.jpg",
+      "Een kijkje achter de schermen bij RTT Commerce. Ontdek wat een dag als Brand Ambassador inhoudt, van teamevents tot persoonlijke groei.",
+    image: "/images/about-image.jpg",
     author: "RTT Commerce Team",
-    date: "2 December 2024",
-    slug: "kunst-b2b-netwerken-belgie",
+    date: "1 November 2024",
+    slug: "werken-als-brand-ambassador",
   },
   {
     id: 3,

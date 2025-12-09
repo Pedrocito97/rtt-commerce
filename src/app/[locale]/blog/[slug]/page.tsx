@@ -53,30 +53,6 @@ const blogPosts: Record<
     date: "9 December 2024",
     category: "Career",
   },
-  "kunst-b2b-netwerken-belgie": {
-    title: "De Kunst van B2B Netwerken in België",
-    excerpt:
-      "Effectief netwerken in de Belgische zakelijke wereld vereist een unieke aanpak.",
-    content: [
-      "België is een unieke markt met zijn eigen zakelijke cultuur. Succesvol netwerken in dit land vereist inzicht in regionale verschillen en een authentieke aanpak. Hier delen we de geheimen van effectief B2B netwerken in de Belgische context.",
-      "## Begrijp de Belgische Zakencultuur",
-      "Belgen waarderen authenticiteit boven agressieve verkooptechnieken. Of je nu in Vlaanderen, Wallonië of Brussel werkt, persoonlijke relaties zijn de basis van zakelijk succes. Neem de tijd om je contacten echt te leren kennen voordat je zaken doet.",
-      "## Taal Maakt het Verschil",
-      "In een meertalig land als België kan het spreken van de juiste taal deuren openen. In Vlaanderen wordt Nederlands gewaardeerd, in Wallonië Frans. In Brussel is flexibiliteit key. Bij RTT Commerce trainen we onze teams om moeiteloos te schakelen.",
-      "## Kies de Juiste Events",
-      "Van netwerk-lunches in Antwerpen tot zakelijke bijeenkomsten in Brussel - België biedt talloze mogelijkheden om te netwerken. Focus op kwaliteit boven kwantiteit. Eén waardevolle connectie is meer waard dan tien oppervlakkige contacten.",
-      "## LinkedIn: Jouw Digitale Netwerkpartner",
-      "LinkedIn is essentieel voor B2B netwerken in België. Deel relevante content, reageer op posts van anderen en bouw je online aanwezigheid op. Belgische professionals zijn actief op dit platform en verwachten professionaliteit.",
-      "## De Kunst van Follow-Up",
-      "Na een eerste ontmoeting begint het echte werk. Stuur binnen 24 uur een persoonlijk bericht. Refereer aan jullie gesprek en bied waarde aan. Consistente, niet-opdringerige follow-up bouwt langdurige relaties.",
-      "## Geduld Loont",
-      "In België worden zakelijke beslissingen zelden impulsief genomen. Respecteer het tempo van je prospects en focus op het bouwen van vertrouwen. De investering in geduld betaalt zich uit in loyale, langdurige klantrelaties.",
-    ],
-    image: "/images/events/rooftop-event.jpg",
-    author: "RTT Commerce Team",
-    date: "2 December 2024",
-    category: "Sales Tips",
-  },
   "groeipad-rtt-commerce": {
     title: "Van Starter tot Team Leader: Jouw Groeipad bij RTT Commerce",
     excerpt:
