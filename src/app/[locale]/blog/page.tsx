@@ -10,74 +10,68 @@ import { Calendar, User, ArrowRight, Search } from "lucide-react";
 const blogPosts = [
   {
     id: 1,
-    title: "How to Start Your Sales Career in Belgium",
+    title: "5 Redenen Waarom Direct Sales Jouw Carrière Kan Lanceren",
     excerpt:
-      "Discover the essential steps to kickstart your sales career and make a strong impression in the Belgian market. Learn from our experts.",
-    image:
-      "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?auto=format&fit=crop&w=800&q=80",
-    author: "RTT Commerce",
-    date: "December 5, 2024",
-    slug: "start-sales-career-belgium",
+      "Ontdek waarom steeds meer young professionals kiezen voor een carrière in direct sales. Van flexibiliteit tot onbeperkt verdienpotentieel - dit zijn de voordelen die jij moet kennen.",
+    image: "/images/team-conference.webp",
+    author: "RTT Commerce Team",
+    date: "9 December 2024",
+    slug: "waarom-direct-sales-carriere",
     category: "Career",
   },
   {
     id: 2,
-    title: "The Power of Networking in B2B Sales",
+    title: "De Kunst van B2B Netwerken in België",
     excerpt:
-      "Learn how strategic networking can transform your B2B sales approach and open doors to new opportunities.",
-    image:
-      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80",
-    author: "RTT Commerce",
-    date: "November 28, 2024",
-    slug: "power-networking-b2b-sales",
+      "Effectief netwerken in de Belgische zakelijke wereld vereist een unieke aanpak. Leer de geheimen van succesvolle B2B-relaties in Vlaanderen en Wallonië.",
+    image: "/images/events/rooftop-event.jpg",
+    author: "RTT Commerce Team",
+    date: "2 December 2024",
+    slug: "kunst-b2b-netwerken-belgie",
     category: "Sales Tips",
   },
   {
     id: 3,
-    title: "Building Long-term Client Relationships",
+    title: "Van Starter tot Team Leader: Jouw Groeipad bij RTT Commerce",
     excerpt:
-      "Expert tips on nurturing client relationships that lead to sustainable business growth and repeat success.",
-    image:
-      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
-    author: "RTT Commerce",
-    date: "November 15, 2024",
-    slug: "building-client-relationships",
-    category: "Business",
-  },
-  {
-    id: 4,
-    title: "Top 5 Skills Every Sales Professional Needs",
-    excerpt:
-      "Master these essential skills to become a top-performing sales professional in today's competitive market.",
-    image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80",
-    author: "RTT Commerce",
-    date: "November 1, 2024",
-    slug: "top-5-sales-skills",
+      "Benieuwd naar de doorgroeimogelijkheden in sales? Ontdek hoe onze Brand Ambassadors uitgroeien tot succesvolle Team Leaders met begeleiding en training.",
+    image: "/images/conference-room.jpg",
+    author: "RTT Commerce Team",
+    date: "25 November 2024",
+    slug: "groeipad-rtt-commerce",
     category: "Career",
   },
   {
-    id: 5,
-    title: "The Future of Direct Sales in Europe",
+    id: 4,
+    title: "Hoe Je Klantrelaties Bouwt Die Blijven",
     excerpt:
-      "Explore emerging trends and opportunities in the European direct sales market and how to position yourself for success.",
-    image:
-      "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80",
-    author: "RTT Commerce",
-    date: "October 20, 2024",
-    slug: "future-direct-sales-europe",
-    category: "Industry",
+      "Duurzame klantrelaties zijn de sleutel tot langdurig succes in sales. Leer de technieken die onze top performers gebruiken om klanten te behouden.",
+    image: "/images/events/event5.jpg",
+    author: "RTT Commerce Team",
+    date: "18 November 2024",
+    slug: "klantrelaties-bouwen",
+    category: "Business",
+  },
+  {
+    id: 5,
+    title: "Sales Tips voor Young Professionals in 2024",
+    excerpt:
+      "De saleswereld evolueert snel. Van social selling tot personal branding - dit zijn de moderne technieken die elke jonge professional moet beheersen.",
+    image: "/images/hero-bg.jpg",
+    author: "RTT Commerce Team",
+    date: "10 November 2024",
+    slug: "sales-tips-young-professionals-2024",
+    category: "Sales Tips",
   },
   {
     id: 6,
-    title: "Work-Life Balance in a Sales Career",
+    title: "Werken als Brand Ambassador: Wat Kun Je Verwachten?",
     excerpt:
-      "Tips and strategies for maintaining a healthy work-life balance while pursuing a successful career in sales.",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
-    author: "RTT Commerce",
-    date: "October 10, 2024",
-    slug: "work-life-balance-sales",
+      "Een kijkje achter de schermen bij RTT Commerce. Ontdek wat een dag als Brand Ambassador inhoudt, van teamevents tot persoonlijke groei.",
+    image: "/images/about-image.jpg",
+    author: "RTT Commerce Team",
+    date: "1 November 2024",
+    slug: "werken-als-brand-ambassador",
     category: "Lifestyle",
   },
 ];

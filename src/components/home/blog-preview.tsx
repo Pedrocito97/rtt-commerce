@@ -11,36 +11,33 @@ import { Link } from "@/i18n/routing";
 const posts = [
   {
     id: 1,
-    title: "How to Start Your Sales Career in Belgium",
+    title: "5 Redenen Waarom Direct Sales Jouw Carrière Kan Lanceren",
     excerpt:
-      "Discover the essential steps to kickstart your sales career and make a strong impression in the Belgian market.",
-    image:
-      "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?auto=format&fit=crop&w=800&q=80",
-    author: "RTT Commerce",
-    date: "December 5, 2024",
-    slug: "start-sales-career-belgium",
+      "Ontdek waarom steeds meer young professionals kiezen voor een carrière in direct sales. Van flexibiliteit tot onbeperkt verdienpotentieel.",
+    image: "/images/team-conference.webp",
+    author: "RTT Commerce Team",
+    date: "9 December 2024",
+    slug: "waarom-direct-sales-carriere",
   },
   {
     id: 2,
-    title: "The Power of Networking in B2B Sales",
+    title: "De Kunst van B2B Netwerken in België",
     excerpt:
-      "Learn how strategic networking can transform your B2B sales approach and open doors to new opportunities.",
-    image:
-      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80",
-    author: "RTT Commerce",
-    date: "November 28, 2024",
-    slug: "power-networking-b2b-sales",
+      "Effectief netwerken in de Belgische zakelijke wereld vereist een unieke aanpak. Leer de geheimen van succesvolle B2B-relaties.",
+    image: "/images/events/rooftop-event.jpg",
+    author: "RTT Commerce Team",
+    date: "2 December 2024",
+    slug: "kunst-b2b-netwerken-belgie",
   },
   {
     id: 3,
-    title: "Building Long-term Client Relationships",
+    title: "Van Starter tot Team Leader: Jouw Groeipad bij RTT Commerce",
     excerpt:
-      "Expert tips on nurturing client relationships that lead to sustainable business growth and repeat success.",
-    image:
-      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
-    author: "RTT Commerce",
-    date: "November 15, 2024",
-    slug: "building-client-relationships",
+      "Benieuwd naar de doorgroeimogelijkheden in sales? Ontdek hoe onze Brand Ambassadors uitgroeien tot succesvolle Team Leaders.",
+    image: "/images/conference-room.jpg",
+    author: "RTT Commerce Team",
+    date: "25 November 2024",
+    slug: "groeipad-rtt-commerce",
   },
 ];
 
