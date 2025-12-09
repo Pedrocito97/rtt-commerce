@@ -10,29 +10,29 @@ import { useTranslations } from "next-intl";
 const testimonials = [
   {
     id: 1,
-    name: "Jan D. Anderson",
-    role: "Sales Manager",
-    image: "/images/team/team01.jpg",
+    name: "Lou",
+    role: "Brand Ambassador",
+    image: "/images/team/lou.jpg",
     content:
-      "RTT Commerce has been instrumental in my career growth. The training programs and constant support have helped me develop skills I never thought possible.",
+      "Cette expérience me permet de me développer professionnellement et personnellement. Chaque jour est un nouveau challenge et cela me permet de me dépasser !",
     rating: 5,
   },
   {
     id: 2,
-    name: "Jennefer Tange",
-    role: "Business Developer",
-    image: "/images/team/team05.jpg",
+    name: "Quentin",
+    role: "Brand Ambassador",
+    image: "/images/team/quentin.jpg",
     content:
-      "The flexibility and freedom offered here is unmatched. I've been able to grow at my own pace while having access to incredible resources and mentorship.",
+      "Travailler chez RTT Commerce m'a fait réaliser que j'ai un talent pour la gestion d'entreprise et le recrutement. J'ai appris à me connaître moi-même de plus en plus.",
     rating: 5,
   },
   {
     id: 3,
-    name: "Leopold Wolterink",
-    role: "Team Lead",
-    image: "/images/team/team06.jpg",
+    name: "Yaren",
+    role: "Brand Ambassador",
+    image: "/images/team/yaren.jpg",
     content:
-      "From intern to team lead in just two years. The growth opportunities at RTT Commerce are real, and the team support makes it all possible.",
+      "Bij RTT Commerce heb ik geleerd om mijn grenzen te verleggen en mezelf te ontwikkelen. De sfeer in het team is ongelooflijk en elke dag is een kans om te groeien!",
     rating: 5,
   },
 ];
