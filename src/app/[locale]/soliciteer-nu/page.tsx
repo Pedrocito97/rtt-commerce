@@ -1,18 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { Section, fadeInUp } from "@/components/ui/section";
 import { Button } from "@/components/ui/button";
 import {
   User,
   Mail,
   Phone,
-  Briefcase,
   FileText,
   Send,
   CheckCircle,
@@ -21,46 +21,33 @@ import {
   Clock,
   Award,
   Users,
+  Upload,
+  Globe,
+  X,
 } from "lucide-react";
+import { countryCodes, defaultCountryCode } from "@/lib/country-codes";
+
+const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
 
 const applicationSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
+  firstName: z.string().min(2, "First name must be at least 2 characters"),
+  lastName: z.string().min(2, "Last name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email"),
-  phone: z.string().min(9, "Please enter a valid phone number"),
-  position: z.string().min(1, "Please select a position"),
-  subject: z.string().optional(),
-  message: z.string().min(20, "Please tell us more about yourself (min 20 characters)"),
+  countryCode: z.string().min(1, "Please select a country code"),
+  phone: z.string().min(6, "Please enter a valid phone number"),
+  language: z.enum(["fr", "nl"], { message: "Please select a language" }),
 });
 
 type ApplicationFormData = z.infer<typeof applicationSchema>;
 
-const positions = [
-  { value: "sales-advisor", label: "Sales Advisor" },
-  { value: "sales-representative", label: "Sales Representative" },
-  { value: "sales-marketing", label: "Sales & Marketing" },
-];
-
-const benefits = [
-  {
-    icon: <Clock className="w-6 h-6" />,
-    title: "Response within 24 hours",
-    description: "We value your time and will get back to you quickly.",
-  },
-  {
-    icon: <Award className="w-6 h-6" />,
-    title: "No experience required",
-    description: "We provide comprehensive training for all new team members.",
-  },
-  {
-    icon: <Users className="w-6 h-6" />,
-    title: "Join a young team",
-    description: "Work with dynamic professionals in a supportive environment.",
-  },
-];
-
 export default function ApplyPage() {
+  const t = useTranslations("apply");
   const [step, setStep] = useState(1);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [cvFile, setCvFile] = useState<File | null>(null);
+  const [cvError, setCvError] = useState<string | null>(null);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const totalSteps = 3;
 
   const {
@@ -69,24 +56,114 @@ export default function ApplyPage() {
     formState: { errors, isSubmitting },
     trigger,
     watch,
+    setValue,
   } = useForm<ApplicationFormData>({
     resolver: zodResolver(applicationSchema),
     mode: "onChange",
+    defaultValues: {
+      countryCode: defaultCountryCode,
+    },
   });
 
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    setCvError(null);
+
+    if (!file) {
+      setCvFile(null);
+      return;
+    }
+
+    if (file.type !== "application/pdf") {
+      setCvError(t("cvErrorType"));
+      setCvFile(null);
+      return;
+    }
+
+    if (file.size > MAX_FILE_SIZE) {
+      setCvError(t("cvErrorSize"));
+      setCvFile(null);
+      return;
+    }
+
+    setCvFile(file);
+  };
+
+  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    const file = e.dataTransfer.files?.[0];
+
+    if (!file) return;
+
+    if (file.type !== "application/pdf") {
+      setCvError(t("cvErrorType"));
+      return;
+    }
+
+    if (file.size > MAX_FILE_SIZE) {
+      setCvError(t("cvErrorSize"));
+      return;
+    }
+
+    setCvFile(file);
+    setCvError(null);
+  };
+
+  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
+    e.preventDefault();
+  };
+
+  const removeCvFile = () => {
+    setCvFile(null);
+    setCvError(null);
+    if (fileInputRef.current) {
+      fileInputRef.current.value = "";
+    }
+  };
+
   const onSubmit = async (data: ApplicationFormData) => {
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    console.log(data);
-    setIsSubmitted(true);
+    setSubmitError(null);
+
+    const formData = new FormData();
+    formData.append("firstName", data.firstName);
+    formData.append("lastName", data.lastName);
+    formData.append("email", data.email);
+    formData.append("countryCode", data.countryCode);
+    formData.append("phone", data.phone);
+    formData.append("language", data.language);
+
+    if (cvFile) {
+      formData.append("cv", cvFile);
+    }
+
+    try {
+      const response = await fetch("/api/apply", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Failed to submit application");
+      }
+
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error("Submit error:", error);
+      setSubmitError(
+        error instanceof Error ? error.message : "An error occurred. Please try again."
+      );
+    }
   };
 
   const nextStep = async () => {
     let fieldsToValidate: (keyof ApplicationFormData)[] = [];
 
     if (step === 1) {
-      fieldsToValidate = ["name", "email", "phone"];
+      fieldsToValidate = ["firstName", "lastName", "email", "countryCode", "phone"];
     } else if (step === 2) {
-      fieldsToValidate = ["position"];
+      fieldsToValidate = ["language"];
     }
 
     const isValid = await trigger(fieldsToValidate);
@@ -98,6 +175,24 @@ export default function ApplyPage() {
   const prevStep = () => {
     setStep((prev) => Math.max(prev - 1, 1));
   };
+
+  const benefits = [
+    {
+      icon: <Clock className="w-6 h-6" />,
+      title: t("benefit1"),
+      description: t("benefit1Desc"),
+    },
+    {
+      icon: <Award className="w-6 h-6" />,
+      title: t("benefit2"),
+      description: t("benefit2Desc"),
+    },
+    {
+      icon: <Users className="w-6 h-6" />,
+      title: t("benefit3"),
+      description: t("benefit3Desc"),
+    },
+  ];
 
   return (
     <>
@@ -114,15 +209,12 @@ export default function ApplyPage() {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block px-4 py-1.5 rounded-full bg-[var(--primary-blue)]/10 text-[var(--primary-blue)] text-sm font-medium mb-6">
-              Solliciteer
+              {t("badge")}
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[var(--dark)] mb-6">
-              Start je carrière bij RTT Commerce
+              {t("title")}
             </h1>
-            <p className="text-xl text-[var(--gray-600)]">
-              Sign up and start your journey! Join our young and innovative team
-              for constant support and growth opportunities.
-            </p>
+            <p className="text-xl text-[var(--gray-600)]">{t("subtitle")}</p>
           </motion.div>
         </div>
       </section>
@@ -174,15 +266,14 @@ export default function ApplyPage() {
                 <CheckCircle className="w-12 h-12 text-green-500" />
               </motion.div>
               <h2 className="text-3xl font-bold text-[var(--dark)] mb-4">
-                Sollicitatie verzonden!
+                {t("successTitle")}
               </h2>
               <p className="text-[var(--gray-600)] mb-8 max-w-md mx-auto">
-                Bedankt voor je interesse in RTT Commerce. We nemen binnen 24 uur
-                contact met je op.
+                {t("successMessage")}
               </p>
               <Link href="/">
                 <Button variant="outline">
-                  Terug naar home
+                  {t("backHome")}
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
@@ -198,10 +289,10 @@ export default function ApplyPage() {
               <div className="px-8 pt-8">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-sm font-medium text-[var(--gray-600)]">
-                    Step {step} of {totalSteps}
+                    {t("stepOf", { step, total: totalSteps })}
                   </span>
                   <span className="text-sm text-[var(--gray-500)]">
-                    {Math.round((step / totalSteps) * 100)}% complete
+                    {Math.round((step / totalSteps) * 100)}{t("complete")}
                   </span>
                 </div>
                 <div className="h-2 bg-[var(--gray-100)] rounded-full overflow-hidden">
@@ -227,40 +318,63 @@ export default function ApplyPage() {
                     >
                       <div>
                         <h2 className="text-2xl font-bold text-[var(--dark)] mb-2">
-                          Personal Information
+                          {t("step1")}
                         </h2>
-                        <p className="text-[var(--gray-600)]">
-                          Tell us a bit about yourself.
-                        </p>
+                        <p className="text-[var(--gray-600)]">{t("step1Desc")}</p>
                       </div>
 
                       <div className="space-y-4">
+                        {/* First Name */}
                         <div>
                           <label className="block text-sm font-medium text-[var(--gray-700)] mb-2">
                             <User className="w-4 h-4 inline mr-2" />
-                            Naam *
+                            {t("firstName")} *
                           </label>
                           <input
-                            {...register("name")}
+                            {...register("firstName")}
                             type="text"
                             className={`w-full px-4 py-3 rounded-xl border ${
-                              errors.name
+                              errors.firstName
                                 ? "border-red-500"
                                 : "border-[var(--gray-200)]"
                             } focus:border-[var(--primary-blue)] focus:ring-2 focus:ring-[var(--primary-blue)]/20 outline-none transition-all`}
-                            placeholder="Je volledige naam"
+                            placeholder={t("firstNamePlaceholder")}
                           />
-                          {errors.name && (
+                          {errors.firstName && (
                             <p className="mt-1 text-sm text-red-500">
-                              {errors.name.message}
+                              {errors.firstName.message}
                             </p>
                           )}
                         </div>
 
+                        {/* Last Name */}
+                        <div>
+                          <label className="block text-sm font-medium text-[var(--gray-700)] mb-2">
+                            <User className="w-4 h-4 inline mr-2" />
+                            {t("lastName")} *
+                          </label>
+                          <input
+                            {...register("lastName")}
+                            type="text"
+                            className={`w-full px-4 py-3 rounded-xl border ${
+                              errors.lastName
+                                ? "border-red-500"
+                                : "border-[var(--gray-200)]"
+                            } focus:border-[var(--primary-blue)] focus:ring-2 focus:ring-[var(--primary-blue)]/20 outline-none transition-all`}
+                            placeholder={t("lastNamePlaceholder")}
+                          />
+                          {errors.lastName && (
+                            <p className="mt-1 text-sm text-red-500">
+                              {errors.lastName.message}
+                            </p>
+                          )}
+                        </div>
+
+                        {/* Email */}
                         <div>
                           <label className="block text-sm font-medium text-[var(--gray-700)] mb-2">
                             <Mail className="w-4 h-4 inline mr-2" />
-                            E-mail *
+                            {t("email")} *
                           </label>
                           <input
                             {...register("email")}
@@ -270,7 +384,7 @@ export default function ApplyPage() {
                                 ? "border-red-500"
                                 : "border-[var(--gray-200)]"
                             } focus:border-[var(--primary-blue)] focus:ring-2 focus:ring-[var(--primary-blue)]/20 outline-none transition-all`}
-                            placeholder="je@email.com"
+                            placeholder={t("emailPlaceholder")}
                           />
                           {errors.email && (
                             <p className="mt-1 text-sm text-red-500">
@@ -279,24 +393,41 @@ export default function ApplyPage() {
                           )}
                         </div>
 
+                        {/* Phone with Country Code */}
                         <div>
                           <label className="block text-sm font-medium text-[var(--gray-700)] mb-2">
                             <Phone className="w-4 h-4 inline mr-2" />
-                            Telefoonnummer *
+                            {t("phone")} *
                           </label>
-                          <input
-                            {...register("phone")}
-                            type="tel"
-                            className={`w-full px-4 py-3 rounded-xl border ${
-                              errors.phone
-                                ? "border-red-500"
-                                : "border-[var(--gray-200)]"
-                            } focus:border-[var(--primary-blue)] focus:ring-2 focus:ring-[var(--primary-blue)]/20 outline-none transition-all`}
-                            placeholder="+32 xxx xxx xxx"
-                          />
-                          {errors.phone && (
+                          <div className="flex gap-2">
+                            <select
+                              {...register("countryCode")}
+                              className={`w-32 px-3 py-3 rounded-xl border ${
+                                errors.countryCode
+                                  ? "border-red-500"
+                                  : "border-[var(--gray-200)]"
+                              } focus:border-[var(--primary-blue)] focus:ring-2 focus:ring-[var(--primary-blue)]/20 outline-none transition-all bg-white`}
+                            >
+                              {countryCodes.map((country) => (
+                                <option key={country.code} value={country.code}>
+                                  {country.flag} {country.code}
+                                </option>
+                              ))}
+                            </select>
+                            <input
+                              {...register("phone")}
+                              type="tel"
+                              className={`flex-1 px-4 py-3 rounded-xl border ${
+                                errors.phone
+                                  ? "border-red-500"
+                                  : "border-[var(--gray-200)]"
+                              } focus:border-[var(--primary-blue)] focus:ring-2 focus:ring-[var(--primary-blue)]/20 outline-none transition-all`}
+                              placeholder={t("phonePlaceholder")}
+                            />
+                          </div>
+                          {(errors.countryCode || errors.phone) && (
                             <p className="mt-1 text-sm text-red-500">
-                              {errors.phone.message}
+                              {errors.countryCode?.message || errors.phone?.message}
                             </p>
                           )}
                         </div>
@@ -304,7 +435,7 @@ export default function ApplyPage() {
                     </motion.div>
                   )}
 
-                  {/* Step 2: Position */}
+                  {/* Step 2: Language & CV */}
                   {step === 2 && (
                     <motion.div
                       key="step2"
@@ -315,61 +446,153 @@ export default function ApplyPage() {
                     >
                       <div>
                         <h2 className="text-2xl font-bold text-[var(--dark)] mb-2">
-                          Position
+                          {t("step2")}
                         </h2>
-                        <p className="text-[var(--gray-600)]">
-                          Which position are you interested in?
-                        </p>
+                        <p className="text-[var(--gray-600)]">{t("step2Desc")}</p>
                       </div>
 
+                      {/* Language Selection */}
                       <div>
-                        <label className="block text-sm font-medium text-[var(--gray-700)] mb-2">
-                          <Briefcase className="w-4 h-4 inline mr-2" />
-                          Vacature *
+                        <label className="block text-sm font-medium text-[var(--gray-700)] mb-3">
+                          <Globe className="w-4 h-4 inline mr-2" />
+                          {t("selectLanguage")} *
                         </label>
                         <div className="space-y-3">
-                          {positions.map((position) => (
-                            <label
-                              key={position.value}
-                              className={`flex items-center p-4 rounded-xl border-2 cursor-pointer transition-all ${
-                                watch("position") === position.value
-                                  ? "border-[var(--primary-blue)] bg-[var(--primary-blue-light)]"
-                                  : "border-[var(--gray-200)] hover:border-[var(--primary-blue)]/50"
+                          <label
+                            className={`flex items-center p-4 rounded-xl border-2 cursor-pointer transition-all ${
+                              watch("language") === "nl"
+                                ? "border-[var(--primary-blue)] bg-[var(--primary-blue-light)]"
+                                : "border-[var(--gray-200)] hover:border-[var(--primary-blue)]/50"
+                            }`}
+                          >
+                            <input
+                              {...register("language")}
+                              type="radio"
+                              value="nl"
+                              className="sr-only"
+                            />
+                            <div
+                              className={`w-5 h-5 rounded-full border-2 mr-4 flex items-center justify-center ${
+                                watch("language") === "nl"
+                                  ? "border-[var(--primary-blue)]"
+                                  : "border-[var(--gray-300)]"
                               }`}
                             >
-                              <input
-                                {...register("position")}
-                                type="radio"
-                                value={position.value}
-                                className="sr-only"
-                              />
-                              <div
-                                className={`w-5 h-5 rounded-full border-2 mr-4 flex items-center justify-center ${
-                                  watch("position") === position.value
-                                    ? "border-[var(--primary-blue)]"
-                                    : "border-[var(--gray-300)]"
-                                }`}
-                              >
-                                {watch("position") === position.value && (
-                                  <div className="w-3 h-3 rounded-full bg-[var(--primary-blue)]" />
-                                )}
-                              </div>
-                              <span className="font-medium text-[var(--dark)]">
-                                {position.label}
-                              </span>
-                            </label>
-                          ))}
+                              {watch("language") === "nl" && (
+                                <div className="w-3 h-3 rounded-full bg-[var(--primary-blue)]" />
+                              )}
+                            </div>
+                            <span className="text-2xl mr-3">🇳🇱</span>
+                            <span className="font-medium text-[var(--dark)]">
+                              {t("languageDutch")}
+                            </span>
+                          </label>
+
+                          <label
+                            className={`flex items-center p-4 rounded-xl border-2 cursor-pointer transition-all ${
+                              watch("language") === "fr"
+                                ? "border-[var(--primary-blue)] bg-[var(--primary-blue-light)]"
+                                : "border-[var(--gray-200)] hover:border-[var(--primary-blue)]/50"
+                            }`}
+                          >
+                            <input
+                              {...register("language")}
+                              type="radio"
+                              value="fr"
+                              className="sr-only"
+                            />
+                            <div
+                              className={`w-5 h-5 rounded-full border-2 mr-4 flex items-center justify-center ${
+                                watch("language") === "fr"
+                                  ? "border-[var(--primary-blue)]"
+                                  : "border-[var(--gray-300)]"
+                              }`}
+                            >
+                              {watch("language") === "fr" && (
+                                <div className="w-3 h-3 rounded-full bg-[var(--primary-blue)]" />
+                              )}
+                            </div>
+                            <span className="text-2xl mr-3">🇫🇷</span>
+                            <span className="font-medium text-[var(--dark)]">
+                              {t("languageFrench")}
+                            </span>
+                          </label>
                         </div>
-                        {errors.position && (
+                        {errors.language && (
                           <p className="mt-2 text-sm text-red-500">
-                            {errors.position.message}
+                            {errors.language.message}
                           </p>
+                        )}
+                      </div>
+
+                      {/* CV Upload */}
+                      <div>
+                        <label className="block text-sm font-medium text-[var(--gray-700)] mb-3">
+                          <FileText className="w-4 h-4 inline mr-2" />
+                          {t("uploadCv")}
+                        </label>
+                        <div
+                          onDrop={handleDrop}
+                          onDragOver={handleDragOver}
+                          className={`border-2 border-dashed rounded-xl p-8 text-center transition-all ${
+                            cvFile
+                              ? "border-green-500 bg-green-50"
+                              : cvError
+                              ? "border-red-500 bg-red-50"
+                              : "border-[var(--gray-300)] hover:border-[var(--primary-blue)]"
+                          }`}
+                        >
+                          <input
+                            ref={fileInputRef}
+                            type="file"
+                            accept=".pdf"
+                            onChange={handleFileChange}
+                            className="hidden"
+                            id="cv-upload"
+                          />
+
+                          {cvFile ? (
+                            <div className="flex items-center justify-center gap-3">
+                              <FileText className="w-8 h-8 text-green-500" />
+                              <div className="text-left">
+                                <p className="font-medium text-[var(--dark)]">
+                                  {cvFile.name}
+                                </p>
+                                <p className="text-sm text-[var(--gray-500)]">
+                                  {(cvFile.size / 1024 / 1024).toFixed(2)} MB
+                                </p>
+                              </div>
+                              <button
+                                type="button"
+                                onClick={removeCvFile}
+                                className="ml-4 p-2 rounded-full hover:bg-red-100 transition-colors"
+                              >
+                                <X className="w-5 h-5 text-red-500" />
+                              </button>
+                            </div>
+                          ) : (
+                            <label
+                              htmlFor="cv-upload"
+                              className="cursor-pointer block"
+                            >
+                              <Upload className="w-12 h-12 mx-auto mb-4 text-[var(--gray-400)]" />
+                              <p className="text-[var(--gray-600)] mb-2">
+                                {t("dragDrop")}
+                              </p>
+                              <p className="text-sm text-[var(--gray-500)]">
+                                {t("maxSize")}
+                              </p>
+                            </label>
+                          )}
+                        </div>
+                        {cvError && (
+                          <p className="mt-2 text-sm text-red-500">{cvError}</p>
                         )}
                       </div>
                     </motion.div>
                   )}
 
-                  {/* Step 3: Message */}
+                  {/* Step 3: Review */}
                   {step === 3 && (
                     <motion.div
                       key="step3"
@@ -380,34 +603,69 @@ export default function ApplyPage() {
                     >
                       <div>
                         <h2 className="text-2xl font-bold text-[var(--dark)] mb-2">
-                          Tell us about yourself
+                          {t("step3")}
                         </h2>
-                        <p className="text-[var(--gray-600)]">
-                          Why are you interested in joining RTT Commerce?
-                        </p>
+                        <p className="text-[var(--gray-600)]">{t("step3Desc")}</p>
                       </div>
 
-                      <div>
-                        <label className="block text-sm font-medium text-[var(--gray-700)] mb-2">
-                          <FileText className="w-4 h-4 inline mr-2" />
-                          Bericht *
-                        </label>
-                        <textarea
-                          {...register("message")}
-                          rows={6}
-                          className={`w-full px-4 py-3 rounded-xl border ${
-                            errors.message
-                              ? "border-red-500"
-                              : "border-[var(--gray-200)]"
-                          } focus:border-[var(--primary-blue)] focus:ring-2 focus:ring-[var(--primary-blue)]/20 outline-none transition-all resize-none`}
-                          placeholder="Tell us about your motivation, experience, and why you'd be a great fit..."
-                        />
-                        {errors.message && (
-                          <p className="mt-1 text-sm text-red-500">
-                            {errors.message.message}
-                          </p>
-                        )}
+                      <div className="space-y-4 bg-[var(--gray-50)] rounded-xl p-6">
+                        <div className="grid grid-cols-2 gap-4">
+                          <div>
+                            <p className="text-sm text-[var(--gray-500)]">
+                              {t("firstName")}
+                            </p>
+                            <p className="font-medium text-[var(--dark)]">
+                              {watch("firstName")}
+                            </p>
+                          </div>
+                          <div>
+                            <p className="text-sm text-[var(--gray-500)]">
+                              {t("lastName")}
+                            </p>
+                            <p className="font-medium text-[var(--dark)]">
+                              {watch("lastName")}
+                            </p>
+                          </div>
+                          <div>
+                            <p className="text-sm text-[var(--gray-500)]">
+                              {t("email")}
+                            </p>
+                            <p className="font-medium text-[var(--dark)]">
+                              {watch("email")}
+                            </p>
+                          </div>
+                          <div>
+                            <p className="text-sm text-[var(--gray-500)]">
+                              {t("phone")}
+                            </p>
+                            <p className="font-medium text-[var(--dark)]">
+                              {watch("countryCode")} {watch("phone")}
+                            </p>
+                          </div>
+                          <div>
+                            <p className="text-sm text-[var(--gray-500)]">
+                              {t("language")}
+                            </p>
+                            <p className="font-medium text-[var(--dark)]">
+                              {watch("language") === "nl"
+                                ? t("languageDutch")
+                                : t("languageFrench")}
+                            </p>
+                          </div>
+                          <div>
+                            <p className="text-sm text-[var(--gray-500)]">CV</p>
+                            <p className="font-medium text-[var(--dark)]">
+                              {cvFile ? cvFile.name : t("noCv")}
+                            </p>
+                          </div>
+                        </div>
                       </div>
+
+                      {submitError && (
+                        <div className="p-4 rounded-xl bg-red-50 border border-red-200">
+                          <p className="text-sm text-red-600">{submitError}</p>
+                        </div>
+                      )}
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -415,33 +673,21 @@ export default function ApplyPage() {
                 {/* Navigation Buttons */}
                 <div className="flex justify-between mt-8 pt-6 border-t border-[var(--gray-100)]">
                   {step > 1 ? (
-                    <Button
-                      type="button"
-                      variant="ghost"
-                      onClick={prevStep}
-                    >
+                    <Button type="button" variant="ghost" onClick={prevStep}>
                       <ArrowLeft className="w-4 h-4 mr-2" />
-                      Previous
+                      {t("previous")}
                     </Button>
                   ) : (
                     <div />
                   )}
 
                   {step < totalSteps ? (
-                    <Button
-                      type="button"
-                      variant="primary"
-                      onClick={nextStep}
-                    >
-                      Next
+                    <Button type="button" variant="primary" onClick={nextStep}>
+                      {t("next")}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   ) : (
-                    <Button
-                      type="submit"
-                      variant="primary"
-                      disabled={isSubmitting}
-                    >
+                    <Button type="submit" variant="primary" disabled={isSubmitting}>
                       {isSubmitting ? (
                         <span className="flex items-center gap-2">
                           <motion.span
@@ -453,12 +699,12 @@ export default function ApplyPage() {
                             }}
                             className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full"
                           />
-                          Verzenden...
+                          {t("submitting")}
                         </span>
                       ) : (
                         <span className="flex items-center gap-2">
                           <Send className="w-5 h-5" />
-                          Solliciteer nu!
+                          {t("submit")}
                         </span>
                       )}
                     </Button>
