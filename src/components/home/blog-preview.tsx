@@ -8,41 +8,31 @@ import { ArrowRight, Calendar, User } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 
-const posts = [
+const postSlugs = [
   {
-    id: 1,
-    title: "5 Redenen Waarom Direct Sales Jouw Carrière Kan Lanceren",
-    excerpt:
-      "Ontdek waarom steeds meer young professionals kiezen voor een carrière in direct sales. Van flexibiliteit tot onbeperkt verdienpotentieel.",
-    image: "/images/team-conference.webp",
-    author: "RTT Commerce Team",
-    date: "9 December 2024",
     slug: "waarom-direct-sales-carriere",
+    image: "/images/team-conference.webp",
   },
   {
-    id: 2,
-    title: "Werken als Brand Ambassador: Wat Kun Je Verwachten?",
-    excerpt:
-      "Een kijkje achter de schermen bij RTT Commerce. Ontdek wat een dag als Brand Ambassador inhoudt, van teamevents tot persoonlijke groei.",
-    image: "/images/about-image.jpg",
-    author: "RTT Commerce Team",
-    date: "1 November 2024",
     slug: "werken-als-brand-ambassador",
+    image: "/images/about-image.jpg",
   },
   {
-    id: 3,
-    title: "Van Starter tot Team Leader: Jouw Groeipad bij RTT Commerce",
-    excerpt:
-      "Benieuwd naar de doorgroeimogelijkheden in sales? Ontdek hoe onze Brand Ambassadors uitgroeien tot succesvolle Team Leaders.",
-    image: "/images/conference-room.jpg",
-    author: "RTT Commerce Team",
-    date: "25 November 2024",
     slug: "groeipad-rtt-commerce",
+    image: "/images/conference-room.jpg",
   },
 ];
 
 export function BlogPreview() {
   const t = useTranslations("blog");
+
+  const posts = postSlugs.map((post) => ({
+    ...post,
+    title: t(`posts.${post.slug}.title`),
+    excerpt: t(`posts.${post.slug}.excerpt`),
+    date: t(`posts.${post.slug}.date`),
+    author: "RTT Commerce Team",
+  }));
 
   return (
     <Section background="light">
@@ -61,7 +51,7 @@ export function BlogPreview() {
       >
         {posts.map((post) => (
           <motion.article
-            key={post.id}
+            key={post.slug}
             variants={fadeInUp}
             className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
           >

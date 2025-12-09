@@ -161,7 +161,117 @@
     "newsletterSubtitle": "Abonneer op onze nieuwsbrief voor de laatste inzichten en carrièretips.",
     "emailPlaceholder": "Voer je e-mail in",
     "subscribe": "Abonneren",
-    "privacyNote": "We respecteren je privacy. Je kunt je op elk moment afmelden."
+    "privacyNote": "We respecteren je privacy. Je kunt je op elk moment afmelden.",
+    "backToBlog": "Terug naar Blog",
+    "shareArticle": "Deel dit artikel",
+    "relatedArticles": "Gerelateerde Artikelen",
+    "readyToStart": "Klaar om je salescarrière te starten?",
+    "posts": {
+      "waarom-direct-sales-carriere": {
+        "title": "5 Redenen Waarom Direct Sales Jouw Carrière Kan Lanceren",
+        "excerpt": "Ontdek waarom steeds meer young professionals kiezen voor een carrière in direct sales. Van flexibiliteit tot onbeperkt verdienpotentieel - dit zijn de voordelen die jij moet kennen.",
+        "date": "9 December 2024",
+        "content": [
+          "Ben je op zoek naar een carrière met onbeperkte mogelijkheden? Direct sales biedt precies dat. Bij RTT Commerce zien we dagelijks hoe jonge professionals uitgroeien tot succesvolle ondernemers. Dit zijn de vijf redenen waarom direct sales jouw perfecte startpunt kan zijn.",
+          "## 1. Flexibiliteit en Vrijheid",
+          "In tegenstelling tot een traditionele 9-tot-5 baan, biedt direct sales de vrijheid om je eigen schema te bepalen. Je bent je eigen baas en bepaalt zelf hoeveel uren je werkt. Deze flexibiliteit maakt het mogelijk om werk en privé perfect in balans te houden.",
+          "## 2. Onbeperkt Verdienpotentieel",
+          "Bij RTT Commerce is je inkomen niet beperkt door een vast salaris. Hoe meer je inzet, hoe meer je verdient. Onze top performers bewijzen elke maand dat hard werken en slimme strategieën leiden tot een inkomen dat ver boven het gemiddelde ligt.",
+          "## 3. Persoonlijke Ontwikkeling",
+          "Sales is de ultieme school voor persoonlijke groei. Je leert communiceren, onderhandelen, omgaan met afwijzing en doorzetten. Deze vaardigheden zijn waardevol in elk aspect van je leven, niet alleen in je carrière.",
+          "## 4. Ondernemerservaring",
+          "Als Brand Ambassador bij RTT Commerce leer je de basisprincipes van ondernemen. Van klantacquisitie tot relatiebeheer - je bouwt een complete skillset die je kan gebruiken om later je eigen bedrijf te starten.",
+          "## 5. Een Hecht Team en Netwerk",
+          "Bij RTT Commerce word je onderdeel van een dynamisch team. Onze regelmatige events, trainingen en teambuilding-activiteiten zorgen voor een sterk netwerk dat je carrière lang zal ondersteunen. Je collega's worden je vrienden en mentors.",
+          "## Klaar om te starten?",
+          "Of je nu net afgestudeerd bent of op zoek bent naar een carrièreswitch, direct sales biedt de mogelijkheden die je zoekt. Bij RTT Commerce krijg je alle ondersteuning en training die je nodig hebt om te slagen. Neem vandaag nog contact met ons op en ontdek wat we voor jou kunnen betekenen."
+        ]
+      },
+      "groeipad-rtt-commerce": {
+        "title": "Van Starter tot Team Leader: Jouw Groeipad bij RTT Commerce",
+        "excerpt": "Benieuwd naar de doorgroeimogelijkheden in sales? Ontdek hoe onze Brand Ambassadors uitgroeien tot succesvolle Team Leaders met begeleiding en training.",
+        "date": "25 November 2024",
+        "content": [
+          "Bij RTT Commerce geloven we in talent ontwikkelen. Sinds onze oprichting in 2017 hebben we tientallen young professionals zien uitgroeien van startersposities tot leiderschapsrollen. Dit is hoe jouw groeipad eruit kan zien.",
+          "## Stap 1: Brand Ambassador",
+          "Als Brand Ambassador leer je de fundamenten van sales en klantrelaties. Je werkt direct met klanten, ontwikkelt je communicatievaardigheden en leert de producten en diensten door en door kennen. Deze fase duurt gemiddeld 3-6 maanden.",
+          "## Stap 2: Senior Brand Ambassador",
+          "Na het bewijzen van je vaardigheden en het behalen van consistent resultaat, word je Senior Brand Ambassador. Je krijgt meer verantwoordelijkheid, begeleidt nieuwe teamleden en ontwikkelt je leiderschapskwaliteiten.",
+          "## Stap 3: Team Coordinator",
+          "Als Team Coordinator leid je een klein team van Brand Ambassadors. Je bent verantwoordelijk voor hun ontwikkeling, motivatie en resultaten. Dit is waar je echt leert wat het betekent om een team naar succes te leiden.",
+          "## Stap 4: Team Leader",
+          "De ultieme stap in onze organisatie. Als Team Leader ben je verantwoordelijk voor een groter team, strategie en bedrijfsontwikkeling. Je hebt een direct impact op de groei van RTT Commerce.",
+          "## Onze Training en Ondersteuning",
+          "Elke stap wordt ondersteund door uitgebreide training. Van wekelijkse coaching sessions tot maandelijkse conferenties in het buitenland - we investeren in jouw ontwikkeling. Onze succesvolle teamleden zoals Lou, Quentin en Yaren bewijzen dat deze aanpak werkt.",
+          "## Jouw Traject Begint Hier",
+          "Of je nu net begint of al ervaring hebt, bij RTT Commerce is er altijd ruimte om te groeien. We kijken niet naar je CV, maar naar je potentieel en drive. Ben je klaar voor de uitdaging?"
+        ]
+      },
+      "klantrelaties-bouwen": {
+        "title": "Hoe Je Klantrelaties Bouwt Die Blijven",
+        "excerpt": "Duurzame klantrelaties zijn de sleutel tot langdurig succes in sales. Leer de technieken die onze top performers gebruiken om klanten te behouden.",
+        "date": "18 November 2024",
+        "content": [
+          "In sales draait alles om relaties. Een tevreden klant komt terug en verwijst anderen door. Maar hoe bouw je relaties die echt blijven? Dit zijn de technieken die onze top performers gebruiken.",
+          "## Luister Meer Dan Je Praat",
+          "De beste verkopers zijn uitstekende luisteraars. Voordat je een oplossing presenteert, moet je eerst de situatie van je klant echt begrijpen. Stel open vragen en luister actief naar de antwoorden.",
+          "## Wees Authentiek",
+          "Klanten voelen het wanneer je niet oprecht bent. Wees jezelf, geef eerlijk advies - zelfs als dat betekent dat je korte termijn een deal mist. Dit bouwt het vertrouwen dat leidt tot langdurige relaties.",
+          "## Lever Meer Dan Je Belooft",
+          "Onder-beloven en over-leveren is een klassieke maar effectieve strategie. Verras je klanten met extra waarde, snellere service of onverwachte aandacht. Deze kleine extra's maken het verschil.",
+          "## Blijf in Contact",
+          "Relaties verwelken zonder onderhoud. Neem regelmatig contact op met je klanten - niet alleen wanneer je iets wilt verkopen. Een check-in om te vragen hoe het gaat toont dat je om hen geeft als persoon, niet alleen als inkomensbron.",
+          "## Los Problemen Snel Op",
+          "Problemen ontstaan onvermijdelijk. Hoe je ermee omgaat definieert je relatie. Reageer snel, neem verantwoordelijkheid en focus op oplossingen. Een goed opgelost probleem kan de relatie zelfs versterken.",
+          "## Vraag om Feedback",
+          "Vraag actief om feedback van je klanten. Dit toont dat je hun mening waardeert en geeft je waardevolle inzichten om je service te verbeteren. Plus, klanten die feedback geven voelen zich meer betrokken."
+        ]
+      },
+      "sales-tips-young-professionals-2024": {
+        "title": "Sales Tips voor Young Professionals in 2024",
+        "excerpt": "De saleswereld evolueert snel. Van social selling tot personal branding - dit zijn de moderne technieken die elke jonge professional moet beheersen.",
+        "date": "10 November 2024",
+        "content": [
+          "De saleswereld van 2024 ziet er anders uit dan tien jaar geleden. Social media, AI en veranderende klanterwachtingen hebben het speelveld volledig getransformeerd. Dit zijn de tips die elke moderne salesprofessional moet kennen.",
+          "## Omarm Social Selling",
+          "LinkedIn, Instagram en zelfs TikTok zijn krachtige tools voor sales. Bouw je personal brand, deel waardevolle content en connect met potentiële klanten op platforms waar zij actief zijn. Bij RTT Commerce zien we dagelijks hoe social media leads genereert.",
+          "## Investeer in Personal Branding",
+          "In 2024 kopen mensen van mensen, niet van bedrijven. Werk aan je persoonlijke merk. Wat maakt jou uniek? Waarom zou een klant met jou willen werken? Een sterke personal brand opent deuren die anders gesloten zouden blijven.",
+          "## Master Video Communicatie",
+          "Video calls zijn standaard geworden. Zorg dat je setup professioneel is - goede verlichting, rustige achtergrond, stabiele internetverbinding. Oefen je camera-presence tot het natuurlijk aanvoelt.",
+          "## Data-Driven Werken",
+          "Moderne sales draait om data. Gebruik CRM-systemen, analyseer je resultaten en pas je aanpak aan op basis van wat de cijfers je vertellen. Intuïtie is waardevol, maar data maakt je objectief beter.",
+          "## Ontwikkel Emotionele Intelligentie",
+          "In een wereld vol automatisering wordt menselijke connectie belangrijker dan ooit. Werk aan je EQ - het vermogen om emoties te herkennen, begrijpen en beïnvloeden. Dit is wat topsellers onderscheidt van gemiddelde performers.",
+          "## Blijf Leren",
+          "De saleswereld staat niet stil en jij ook niet. Lees boeken, volg podcasts, bezoek trainingen. Bij RTT Commerce bieden we continue educatie aan onze teams, omdat we weten dat stilstand achteruitgang betekent.",
+          "## Bouw aan Veerkracht",
+          "Afwijzing hoort bij sales. De beste verkopers laten zich niet ontmoedigen door een 'nee'. Ze leren ervan en gaan door. Werk aan je mentale veerkracht - het is misschien wel de belangrijkste skill van allemaal."
+        ]
+      },
+      "werken-als-brand-ambassador": {
+        "title": "Werken als Brand Ambassador: Wat Kun Je Verwachten?",
+        "excerpt": "Een kijkje achter de schermen bij RTT Commerce. Ontdek wat een dag als Brand Ambassador inhoudt, van teamevents tot persoonlijke groei.",
+        "date": "1 November 2024",
+        "content": [
+          "Overweeg je een carrière als Brand Ambassador bij RTT Commerce? Dan ben je vast benieuwd wat een typische werkdag inhoudt en wat je kunt verwachten. Hier geven we je een eerlijk kijkje achter de schermen.",
+          "## Een Typische Dag",
+          "Geen dag is hetzelfde als Brand Ambassador. Je begint meestal met een teammeeting waar doelen worden besproken en successen gevierd. Daarna ga je het veld in om klanten te ontmoeten en relaties te bouwen. De middag vliegt voorbij met klantgesprekken en follow-ups.",
+          "## Training en Ontwikkeling",
+          "Vanaf dag één word je ondersteund door ervaren mentors. Wekelijkse trainingen helpen je om je vaardigheden te verbeteren, van communicatietechnieken tot onderhandelingsstrategieën. Je leert niet alleen verkopen, maar ook ondernemen.",
+          "## Teamcultuur",
+          "Bij RTT Commerce zijn we meer dan collega's - we zijn een team. Regelmatige teamevents, van rooftop networking in Brussel tot internationale conferenties, zorgen voor een hechte band. Successen worden samen gevierd.",
+          "## Flexibiliteit",
+          "Als Brand Ambassador heb je de vrijheid om je eigen aanpak te ontwikkelen. Natuurlijk zijn er doelen te halen, maar hoe je dat doet is aan jou. Deze autonomie maakt het werk afwisselend en uitdagend.",
+          "## Uitdagingen",
+          "Laten we eerlijk zijn - sales is niet altijd makkelijk. Je zult 'nee' horen, deals verliezen en tegenslagen ervaren. Maar met de juiste mindset en ondersteuning van je team, worden deze uitdagingen groeikansen.",
+          "## De Beloningen",
+          "Naast een competitief inkomen biedt het werk als Brand Ambassador immateriële beloningen: persoonlijke groei, een sterk netwerk, en de voldoening van je eigen succes bouwen. Onze mensen kiezen voor deze carrière en blijven omdat het leven verandert.",
+          "## Is Het Iets voor Jou?",
+          "Als je ambitieus bent, graag met mensen werkt en niet bang bent voor uitdagingen, dan past deze rol waarschijnlijk bij je. We zoeken niet naar perfecte CV's, maar naar gedreven mensen met potentieel. Misschien ben jij onze volgende succesvolle Brand Ambassador?"
+        ]
+      }
+    }
   },
   "cta": {
     "badge": "Start vandaag je reis",
