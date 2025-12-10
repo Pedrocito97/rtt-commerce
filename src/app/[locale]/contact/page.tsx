@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { useTranslations } from "next-intl";
 import { Section, fadeInUp } from "@/components/ui/section";
 import { Button } from "@/components/ui/button";
 import {
@@ -29,31 +30,6 @@ const contactSchema = z.object({
 
 type ContactFormData = z.infer<typeof contactSchema>;
 
-const contactInfo = [
-  {
-    icon: <MapPin className="w-6 h-6" />,
-    title: "Adres",
-    content: ["350 Avenue Louise", "1050 Brussels, Belgium"],
-  },
-  {
-    icon: <Mail className="w-6 h-6" />,
-    title: "E-mail",
-    content: ["support@rtt-commerce.com"],
-    link: "mailto:support@rtt-commerce.com",
-  },
-  {
-    icon: <Phone className="w-6 h-6" />,
-    title: "Telefoonnummer",
-    content: ["+32 492 525 183"],
-    link: "tel:+32492525183",
-  },
-  {
-    icon: <Clock className="w-6 h-6" />,
-    title: "Openingstijden",
-    content: ["Mon - Fri: 9:00 - 18:00", "Sat - Sun: Closed"],
-  },
-];
-
 const socialLinks = [
   { name: "Facebook", icon: <Facebook className="w-5 h-5" />, href: "https://www.facebook.com/RTTANTWERP" },
   { name: "Instagram", icon: <Instagram className="w-5 h-5" />, href: "https://www.instagram.com/rtt_commerce/" },
@@ -61,6 +37,7 @@ const socialLinks = [
 ];
 
 export default function ContactPage() {
+  const t = useTranslations("contact");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const {
@@ -71,6 +48,31 @@ export default function ContactPage() {
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
   });
+
+  const contactInfo = [
+    {
+      icon: <MapPin className="w-6 h-6" />,
+      title: t("address"),
+      content: ["350 Avenue Louise", "1050 Brussels, Belgium"],
+    },
+    {
+      icon: <Mail className="w-6 h-6" />,
+      title: t("email"),
+      content: ["support@rtt-commerce.com"],
+      link: "mailto:support@rtt-commerce.com",
+    },
+    {
+      icon: <Phone className="w-6 h-6" />,
+      title: t("phone"),
+      content: ["+32 492 525 183"],
+      link: "tel:+32492525183",
+    },
+    {
+      icon: <Clock className="w-6 h-6" />,
+      title: t("openingHours"),
+      content: [t("openingHoursWeekdays"), t("openingHoursWeekend")],
+    },
+  ];
 
   const onSubmit = async (data: ContactFormData) => {
     // Simulate API call
@@ -96,14 +98,13 @@ export default function ContactPage() {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block px-4 py-1.5 rounded-full bg-[var(--primary-blue)]/10 text-[var(--primary-blue)] text-sm font-medium mb-6">
-              Contact
+              {t("badge")}
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[var(--dark)] mb-6">
-              Neem contact op
+              {t("title")}
             </h1>
             <p className="text-xl text-[var(--gray-600)]">
-              Have questions? We&apos;re here to help. Reach out to us and
-              we&apos;ll get back to you as soon as possible.
+              {t("subtitle")}
             </p>
           </motion.div>
         </div>
@@ -121,7 +122,7 @@ export default function ContactPage() {
           >
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-[var(--gray-100)]">
               <h2 className="text-2xl font-bold text-[var(--dark)] mb-6">
-                Stuur ons een bericht
+                {t("formTitle")}
               </h2>
 
               {isSubmitted ? (
@@ -134,10 +135,10 @@ export default function ContactPage() {
                     <CheckCircle className="w-10 h-10 text-green-500" />
                   </div>
                   <h3 className="text-xl font-semibold text-[var(--dark)] mb-2">
-                    Bericht verzonden!
+                    {t("success")}
                   </h3>
                   <p className="text-[var(--gray-600)]">
-                    We nemen zo snel mogelijk contact met je op.
+                    {t("successMessage")}
                   </p>
                 </motion.div>
               ) : (
@@ -145,7 +146,7 @@ export default function ContactPage() {
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium text-[var(--gray-700)] mb-2">
-                        Naam *
+                        {t("name")} *
                       </label>
                       <input
                         {...register("name")}
@@ -155,7 +156,7 @@ export default function ContactPage() {
                             ? "border-red-500"
                             : "border-[var(--gray-200)]"
                         } focus:border-[var(--primary-blue)] focus:ring-2 focus:ring-[var(--primary-blue)]/20 outline-none transition-all`}
-                        placeholder="Je naam"
+                        placeholder={t("namePlaceholder")}
                       />
                       {errors.name && (
                         <p className="mt-1 text-sm text-red-500">
@@ -165,20 +166,20 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-[var(--gray-700)] mb-2">
-                        Telefoonnummer
+                        {t("phone")}
                       </label>
                       <input
                         {...register("phone")}
                         type="tel"
                         className="w-full px-4 py-3 rounded-xl border border-[var(--gray-200)] focus:border-[var(--primary-blue)] focus:ring-2 focus:ring-[var(--primary-blue)]/20 outline-none transition-all"
-                        placeholder="+32 xxx xxx xxx"
+                        placeholder={t("phonePlaceholder")}
                       />
                     </div>
                   </div>
 
                   <div>
                     <label className="block text-sm font-medium text-[var(--gray-700)] mb-2">
-                      E-mail *
+                      {t("email")} *
                     </label>
                     <input
                       {...register("email")}
@@ -188,7 +189,7 @@ export default function ContactPage() {
                           ? "border-red-500"
                           : "border-[var(--gray-200)]"
                       } focus:border-[var(--primary-blue)] focus:ring-2 focus:ring-[var(--primary-blue)]/20 outline-none transition-all`}
-                      placeholder="je@email.com"
+                      placeholder={t("emailPlaceholder")}
                     />
                     {errors.email && (
                       <p className="mt-1 text-sm text-red-500">
@@ -199,7 +200,7 @@ export default function ContactPage() {
 
                   <div>
                     <label className="block text-sm font-medium text-[var(--gray-700)] mb-2">
-                      Onderwerp *
+                      {t("subject")} *
                     </label>
                     <input
                       {...register("subject")}
@@ -209,7 +210,7 @@ export default function ContactPage() {
                           ? "border-red-500"
                           : "border-[var(--gray-200)]"
                       } focus:border-[var(--primary-blue)] focus:ring-2 focus:ring-[var(--primary-blue)]/20 outline-none transition-all`}
-                      placeholder="Waar gaat je bericht over?"
+                      placeholder={t("subjectPlaceholder")}
                     />
                     {errors.subject && (
                       <p className="mt-1 text-sm text-red-500">
@@ -220,7 +221,7 @@ export default function ContactPage() {
 
                   <div>
                     <label className="block text-sm font-medium text-[var(--gray-700)] mb-2">
-                      Bericht *
+                      {t("message")} *
                     </label>
                     <textarea
                       {...register("message")}
@@ -230,7 +231,7 @@ export default function ContactPage() {
                           ? "border-red-500"
                           : "border-[var(--gray-200)]"
                       } focus:border-[var(--primary-blue)] focus:ring-2 focus:ring-[var(--primary-blue)]/20 outline-none transition-all resize-none`}
-                      placeholder="Je bericht..."
+                      placeholder={t("messagePlaceholder")}
                     />
                     {errors.message && (
                       <p className="mt-1 text-sm text-red-500">
@@ -253,12 +254,12 @@ export default function ContactPage() {
                           transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
                           className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full"
                         />
-                        Verzenden...
+                        {t("sending")}
                       </span>
                     ) : (
                       <span className="flex items-center gap-2">
                         <Send className="w-5 h-5" />
-                        Verzenden
+                        {t("send")}
                       </span>
                     )}
                   </Button>
@@ -319,7 +320,7 @@ export default function ContactPage() {
                 transition={{ delay: 0.4 }}
               >
                 <h3 className="font-semibold text-[var(--dark)] mb-4">
-                  Volg ons
+                  {t("followUs")}
                 </h3>
                 <div className="flex gap-3">
                   {socialLinks.map((social) => (
