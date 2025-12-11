@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { Section, SectionHeader, fadeInUp } from "@/components/ui/section";
 import { Button } from "@/components/ui/button";
 import {
@@ -16,29 +15,6 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
-
-const team = [
-  {
-    name: "Jan D. Anderson",
-    role: "CEO",
-    image: "/images/team/team01.jpg",
-  },
-  {
-    name: "Jennefer Tange",
-    role: "Operations Director",
-    image: "/images/team/team05.jpg",
-  },
-  {
-    name: "Leopold Wolterink",
-    role: "Sales Director",
-    image: "/images/team/team06.jpg",
-  },
-  {
-    name: "Janelle Arensman",
-    role: "HR Manager",
-    image: "/images/team/team01.jpg",
-  },
-];
 
 export default function AboutPage() {
   const t = useTranslations("about");
@@ -208,38 +184,6 @@ export default function AboutPage() {
                 </h3>
                 <p className="text-[var(--gray-600)]">{item.description}</p>
               </div>
-            </motion.div>
-          ))}
-        </div>
-      </Section>
-
-      {/* Team */}
-      <Section>
-        <SectionHeader
-          title={t("teamTitle")}
-          subtitle={t("teamSubtitle")}
-        />
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {team.map((member, index) => (
-            <motion.div
-              key={index}
-              className="group text-center"
-              variants={fadeInUp}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-            >
-              <div className="relative aspect-square rounded-2xl overflow-hidden mb-4">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--dark)]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <h3 className="font-semibold text-[var(--dark)]">{member.name}</h3>
-              <p className="text-sm text-[var(--gray-500)]">{member.role}</p>
             </motion.div>
           ))}
         </div>
