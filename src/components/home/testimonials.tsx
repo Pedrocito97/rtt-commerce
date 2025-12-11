@@ -31,8 +31,9 @@ const testimonials = [
     name: "Yaren",
     role: "Brand Ambassador",
     image: "/images/team/yaren.jpg",
+    imagePosition: "center 35%",
     content:
-      "Cette expérience me permet de me développer professionnellement et personnellement. Chaque jour est un nouveau challenge et cela me permet de me dépasser !",
+      "Working at RTT Commerce made me realize that I actually have a talent for business management. I've been learning so much about myself along the way. It constantly pushed me out of my comfort zone and helped me become the best version of who I can be.",
     rating: 5,
   },
 ];
@@ -76,7 +77,8 @@ export function Testimonials() {
                       src={testimonials[current].image}
                       alt={testimonials[current].name}
                       fill
-                      className="object-cover object-[center_75%]"
+                      className="object-cover"
+                      style={{ objectPosition: testimonials[current].imagePosition || "center 75%" }}
                     />
                   </div>
                 </div>
