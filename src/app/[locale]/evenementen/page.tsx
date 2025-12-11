@@ -33,15 +33,7 @@ const pastEvents = [
     attendees: 80,
     image: "/images/events/event3.jpg",
   },
-  {
-    id: 4,
-    title: "Sales Training Workshop",
-    date: "July 2024",
-    location: "Antwerp, Belgium",
-    attendees: 50,
-    image: "/images/events/event4.jpg",
-  },
-  {
+    {
     id: 5,
     title: "Annual Conference",
     date: "June 2024",
@@ -49,15 +41,7 @@ const pastEvents = [
     attendees: 200,
     image: "/images/events/event5.jpg",
   },
-  {
-    id: 6,
-    title: "Networking Dinner",
-    date: "May 2024",
-    location: "Ghent, Belgium",
-    attendees: 60,
-    image: "/images/events/event6.jpg",
-  },
-];
+  ];
 
 const upcomingEvents = [
   {
@@ -218,7 +202,7 @@ export default function EventsPage() {
                   src={event.image}
                   alt={event.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-cover object-top transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--dark)]/80 via-[var(--dark)]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 

@@ -126,7 +126,7 @@ export default function ApplyPage() {
 
     const formData = new FormData();
     formData.append("firstName", data.firstName);
-    formData.append("lastName", data.lastName);
+    formData.append("lastName", data.lastName + " (website)");
     formData.append("email", data.email);
     formData.append("countryCode", data.countryCode);
     formData.append("phone", data.phone);
