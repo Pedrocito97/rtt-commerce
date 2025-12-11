@@ -1,6 +1,5 @@
 import {
   Hero,
-  Partners,
   Values,
   AboutPreview,
   Services,
@@ -14,7 +13,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Partners />
       <Values />
       <AboutPreview />
       <Services />
