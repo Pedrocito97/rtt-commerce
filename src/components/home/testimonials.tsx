@@ -76,7 +76,7 @@ export function Testimonials() {
                       src={testimonials[current].image}
                       alt={testimonials[current].name}
                       fill
-                      className="object-cover object-[center_65%]"
+                      className="object-cover object-[center_75%]"
                     />
                   </div>
                 </div>
