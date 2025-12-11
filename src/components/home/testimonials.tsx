@@ -14,7 +14,7 @@ const testimonials = [
     role: "Brand Ambassador",
     image: "/images/team/lou.jpg",
     content:
-      "Bij RTT Commerce heb ik geleerd om mijn grenzen te verleggen en mezelf te ontwikkelen. De sfeer in het team is ongelooflijk en elke dag is een kans om te groeien!",
+      "Chez RTT Commerce, j'ai appris à repousser mes limites et à me développer. L'ambiance dans l'équipe est incroyable et chaque jour est une opportunité de grandir !",
     rating: 5,
   },
   {
@@ -33,7 +33,7 @@ const testimonials = [
     image: "/images/team/yaren.jpg",
     imagePosition: "center 85%",
     content:
-      "Working at RTT Commerce made me realize that I actually have a talent for business management. I've been learning so much about myself along the way. It constantly pushed me out of my comfort zone and helped me become the best version of who I can be.",
+      "Werken bij RTT Commerce heeft me doen beseffen dat ik een talent heb voor bedrijfsbeheer. Ik heb zoveel over mezelf geleerd. Het heeft me constant uit mijn comfortzone geduwd en me geholpen om de beste versie van mezelf te worden.",
     rating: 5,
   },
 ];
