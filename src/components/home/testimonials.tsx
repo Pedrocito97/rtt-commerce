@@ -31,7 +31,7 @@ const testimonials = [
     name: "Yaren",
     role: "Brand Ambassador",
     image: "/images/team/yaren.jpg",
-    imagePosition: "center 35%",
+    imagePosition: "center 85%",
     content:
       "Working at RTT Commerce made me realize that I actually have a talent for business management. I've been learning so much about myself along the way. It constantly pushed me out of my comfort zone and helped me become the best version of who I can be.",
     rating: 5,
