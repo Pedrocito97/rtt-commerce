@@ -71,12 +71,12 @@ export function Testimonials() {
               <div className="flex flex-col md:flex-row gap-8 items-center">
                 {/* Avatar */}
                 <div className="flex-shrink-0">
-                  <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden ring-4 ring-[var(--primary-blue)]/20">
+                  <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden ring-4 ring-[var(--primary-blue)]/20">
                     <Image
                       src={testimonials[current].image}
                       alt={testimonials[current].name}
                       fill
-                      className="object-cover"
+                      className="object-cover object-top"
                     />
                   </div>
                 </div>
