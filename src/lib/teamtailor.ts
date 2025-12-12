@@ -1,11 +1,13 @@
 const TEAMTAILOR_API_URL = process.env.TEAMTAILOR_API_URL || "https://api.teamtailor.com";
-const TEAMTAILOR_API_KEY = process.env.TEAMTAILOR_API_KEY || "";
 
-const headers = {
-  "Authorization": `Token token=${TEAMTAILOR_API_KEY}`,
-  "X-Api-Version": "20161108",
-  "Content-Type": "application/vnd.api+json",
-};
+function getHeaders() {
+  const key = process.env.TEAMTAILOR_API_KEY;
+  return {
+    "Authorization": `Token token=${key || ""}`,
+    "X-Api-Version": "20180828",
+    "Content-Type": "application/vnd.api+json",
+  };
+}
 
 export interface CandidateData {
   firstName: string;
@@ -33,7 +35,7 @@ export async function uploadFile(
 
   const response = await fetch(`${TEAMTAILOR_API_URL}/v1/uploads`, {
     method: "POST",
-    headers,
+    headers: getHeaders(),
     body: JSON.stringify({
       data: {
         type: "uploads",
@@ -75,7 +77,7 @@ export async function createCandidate(candidateData: CandidateData): Promise<str
 
   const response = await fetch(`${TEAMTAILOR_API_URL}/v1/candidates`, {
     method: "POST",
-    headers,
+    headers: getHeaders(),
     body: JSON.stringify({
       data: {
         type: "candidates",
@@ -103,7 +105,7 @@ export async function createJobApplication(
 ): Promise<string> {
   const response = await fetch(`${TEAMTAILOR_API_URL}/v1/job-applications`, {
     method: "POST",
-    headers,
+    headers: getHeaders(),
     body: JSON.stringify({
       data: {
         type: "job-applications",
@@ -127,6 +129,13 @@ export async function createJobApplication(
 
   if (!response.ok) {
     const errorText = await response.text();
+
+    // Handle "already applied" case - treat as success
+    if (response.status === 422 && errorText.includes("already applied")) {
+      console.log("Candidate has already applied to this job - treating as success");
+      return "existing";
+    }
+
     console.error("Teamtailor job application error:", errorText);
     throw new Error(`Failed to create job application: ${response.status}`);
   }
