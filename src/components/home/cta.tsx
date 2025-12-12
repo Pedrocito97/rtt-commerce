@@ -40,23 +40,30 @@ export function CTA() {
         }}
       />
 
-      {/* Floating sparkles */}
-      {[...Array(6)].map((_, i) => (
+      {/* Floating sparkles - fixed positions to avoid hydration mismatch */}
+      {[
+        { top: 15, left: 10, duration: 3.5, delay: 0.5 },
+        { top: 25, left: 85, duration: 4, delay: 1 },
+        { top: 45, left: 20, duration: 3.8, delay: 0.3 },
+        { top: 60, left: 75, duration: 4.2, delay: 1.5 },
+        { top: 75, left: 40, duration: 3.2, delay: 0.8 },
+        { top: 85, left: 90, duration: 4.5, delay: 1.2 },
+      ].map((sparkle, i) => (
         <motion.div
           key={i}
           className="absolute"
           style={{
-            top: `${Math.random() * 100}%`,
-            left: `${Math.random() * 100}%`,
+            top: `${sparkle.top}%`,
+            left: `${sparkle.left}%`,
           }}
           animate={{
             y: [0, -20, 0],
             opacity: [0.3, 1, 0.3],
           }}
           transition={{
-            duration: 3 + Math.random() * 2,
+            duration: sparkle.duration,
             repeat: Infinity,
-            delay: Math.random() * 2,
+            delay: sparkle.delay,
           }}
         >
           <Sparkles className="w-6 h-6 text-white/30" />
