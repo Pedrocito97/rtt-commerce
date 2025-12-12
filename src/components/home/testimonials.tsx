@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { Section, SectionHeader } from "@/components/ui/section";
@@ -38,13 +38,24 @@ const testimonials = [
   },
 ];
 
+const AUTO_ROTATE_INTERVAL = 6000; // 6 seconds - optimal for reading testimonials
+
 export function Testimonials() {
   const t = useTranslations("testimonials");
   const [current, setCurrent] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
-  const next = () => setCurrent((prev) => (prev + 1) % testimonials.length);
+  const next = useCallback(() => setCurrent((prev) => (prev + 1) % testimonials.length), []);
   const prev = () =>
     setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+
+  // Auto-rotate testimonials
+  useEffect(() => {
+    if (isPaused) return;
+
+    const interval = setInterval(next, AUTO_ROTATE_INTERVAL);
+    return () => clearInterval(interval);
+  }, [isPaused, next]);
 
   return (
     <Section background="light">
@@ -53,7 +64,11 @@ export function Testimonials() {
         subtitle={t("subtitle")}
       />
 
-      <div className="relative max-w-4xl mx-auto">
+      <div
+        className="relative max-w-4xl mx-auto"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
         {/* Quote decoration */}
         <div className="absolute -top-4 -left-4 text-[var(--primary-blue)]/10">
           <Quote className="w-24 h-24" />
