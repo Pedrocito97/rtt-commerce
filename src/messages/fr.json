@@ -397,5 +397,42 @@
     "marketingDesc": "Utilisés pour afficher des publicités personnalisées.",
     "alwaysOn": "Toujours actif",
     "savePreferences": "Enregistrer les préférences"
+  },
+  "metadata": {
+    "home": {
+      "title": "RTT Commerce | Jobs Vente Bruxelles pour Jeunes 18-30 ans",
+      "description": "Rejoins une équipe jeune et dynamique à Bruxelles. Jobs en vente directe et marketing, formation incluse, pas d'expérience requise. Salaire attractif + commissions. Postule maintenant!",
+      "keywords": "job vente bruxelles, emploi commercial belgique, carrière sales jeune, job sans expérience bruxelles, travail vente directe, emploi jeune bruxelles"
+    },
+    "jobs": {
+      "title": "Offres d'Emploi Vente Bruxelles | RTT Commerce",
+      "description": "Découvre nos offres d'emploi en vente à Bruxelles. Jobs pour jeunes 18-30 ans, formation complète incluse, salaire attractif + commissions. Postulez en 2 minutes!",
+      "keywords": "offre emploi vente bruxelles, job commercial belgique, carrière vente directe, emploi sales bruxelles, job marketing bruxelles"
+    },
+    "apply": {
+      "title": "Postuler | Job Commercial Bruxelles Sans Expérience",
+      "description": "Candidature en 2 minutes. Pas d'expérience requise, formation incluse. Réponse garantie sous 24h. Rejoins notre équipe jeune et dynamique à Bruxelles!",
+      "keywords": "postuler job vente, candidature emploi commercial, job sans cv bruxelles, emploi débutant vente belgique"
+    },
+    "about": {
+      "title": "À Propos | RTT Commerce - Entreprise Vente Bruxelles",
+      "description": "Depuis 2017, RTT Commerce forme les jeunes talents en vente directe. 100+ employés, présence nationale en Belgique. Découvrez notre histoire et nos valeurs.",
+      "keywords": "rtt commerce bruxelles, entreprise vente directe belgique, société marketing bruxelles, employeur jeunes belgique"
+    },
+    "contact": {
+      "title": "Contact | RTT Commerce Bruxelles - Avenue Louise",
+      "description": "Contactez RTT Commerce. 350 Avenue Louise, 1050 Bruxelles. Questions sur nos jobs? Réponse rapide garantie. Appelez-nous ou envoyez un email.",
+      "keywords": "contact rtt commerce, adresse rtt commerce bruxelles, téléphone rtt commerce, email rtt commerce"
+    },
+    "blog": {
+      "title": "Blog Carrière Vente | Conseils pour Jeunes | RTT Commerce",
+      "description": "Conseils carrière, tips vente, témoignages d'employés. Tout pour lancer ta carrière commerciale à Bruxelles. Articles et guides gratuits.",
+      "keywords": "blog carrière vente, conseils job commercial, tips sales débutant, carrière jeune belgique"
+    },
+    "events": {
+      "title": "Événements RTT Commerce | Team Building & Networking Belgique",
+      "description": "Découvrez nos événements: team building, conférences, networking à travers l'Europe. Rejoignez la communauté RTT Commerce et développez votre réseau.",
+      "keywords": "événements rtt commerce, team building bruxelles, networking vente belgique, conférence sales"
+    }
   }
 }

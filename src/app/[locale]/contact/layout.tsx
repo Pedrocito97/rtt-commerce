@@ -1,23 +1,14 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import {
-  Hero,
-  Values,
-  AboutPreview,
-  Services,
-  Testimonials,
-  EventsGallery,
-  BlogPreview,
-  CTA,
-} from "@/components/home";
 
 type Props = {
   params: Promise<{ locale: string }>;
+  children: React.ReactNode;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata.home" });
+  const t = await getTranslations({ locale, namespace: "metadata.contact" });
 
   return {
     title: t("title"),
@@ -26,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: t("title"),
       description: t("description"),
-      url: `https://www.rtt-commerce.com/${locale}`,
+      url: `https://www.rtt-commerce.com/${locale}/contact`,
       siteName: "RTT Commerce",
       locale: locale === "nl" ? "nl_BE" : locale === "fr" ? "fr_BE" : "en_US",
       type: "website",
@@ -37,27 +28,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: t("description"),
     },
     alternates: {
-      canonical: `https://www.rtt-commerce.com/${locale}`,
+      canonical: `https://www.rtt-commerce.com/${locale}/contact`,
       languages: {
-        nl: "https://www.rtt-commerce.com/nl",
-        fr: "https://www.rtt-commerce.com/fr",
-        en: "https://www.rtt-commerce.com/en",
+        nl: "https://www.rtt-commerce.com/nl/contact",
+        fr: "https://www.rtt-commerce.com/fr/contact",
+        en: "https://www.rtt-commerce.com/en/contact",
       },
     },
   };
 }
 
-export default function Home() {
-  return (
-    <>
-      <Hero />
-      <Values />
-      <AboutPreview />
-      <Services />
-      <Testimonials />
-      <EventsGallery />
-      <BlogPreview />
-      <CTA />
-    </>
-  );
+export default function ContactLayout({ children }: Props) {
+  return children;
 }

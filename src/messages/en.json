@@ -397,5 +397,42 @@
     "marketingDesc": "Used to deliver personalized advertisements.",
     "alwaysOn": "Always on",
     "savePreferences": "Save Preferences"
+  },
+  "metadata": {
+    "home": {
+      "title": "RTT Commerce | Sales Jobs Brussels for Young People 18-30",
+      "description": "Join a young and dynamic team in Brussels. Sales and marketing jobs, training included, no experience required. Attractive salary + commissions. Apply now!",
+      "keywords": "sales job brussels, commercial job belgium, sales career young, job no experience brussels, direct sales work, young professional jobs brussels"
+    },
+    "jobs": {
+      "title": "Sales Job Openings Brussels | RTT Commerce",
+      "description": "Discover our sales job openings in Brussels. Jobs for young people 18-30, full training included, attractive salary + commissions. Apply in 2 minutes!",
+      "keywords": "sales vacancy brussels, commercial job belgium, direct sales career, sales position brussels, marketing job brussels"
+    },
+    "apply": {
+      "title": "Apply Now | Sales Job Brussels No Experience Required",
+      "description": "Apply in 2 minutes. No experience required, training included. Response guaranteed within 24 hours. Join our young and dynamic team in Brussels!",
+      "keywords": "apply sales job, sales job application, job without cv brussels, entry level sales belgium"
+    },
+    "about": {
+      "title": "About Us | RTT Commerce - Sales Company Brussels",
+      "description": "Since 2017, RTT Commerce trains young talents in direct sales. 100+ employees, nationwide presence in Belgium. Discover our history and values.",
+      "keywords": "rtt commerce brussels, direct sales company belgium, marketing company brussels, employer young people belgium"
+    },
+    "contact": {
+      "title": "Contact | RTT Commerce Brussels - Avenue Louise",
+      "description": "Contact RTT Commerce. 350 Avenue Louise, 1050 Brussels. Questions about our jobs? Fast response guaranteed. Call us or send an email.",
+      "keywords": "contact rtt commerce, address rtt commerce brussels, phone rtt commerce, email rtt commerce"
+    },
+    "blog": {
+      "title": "Sales Career Blog | Tips for Young Professionals | RTT Commerce",
+      "description": "Career advice, sales tips, employee testimonials. Everything to launch your sales career in Brussels. Free articles and guides.",
+      "keywords": "sales career blog, commercial job tips, sales tips beginner, young professional career belgium"
+    },
+    "events": {
+      "title": "RTT Commerce Events | Team Building & Networking Belgium",
+      "description": "Discover our events: team building, conferences, networking across Europe. Join the RTT Commerce community and build your network.",
+      "keywords": "rtt commerce events, team building brussels, sales networking belgium, sales conference"
+    }
   }
 }

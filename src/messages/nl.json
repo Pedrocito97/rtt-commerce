@@ -397,5 +397,42 @@
     "marketingDesc": "Gebruikt voor gepersonaliseerde advertenties.",
     "alwaysOn": "Altijd aan",
     "savePreferences": "Voorkeuren opslaan"
+  },
+  "metadata": {
+    "home": {
+      "title": "RTT Commerce | Sales Jobs Brussel voor Jongeren 18-30 jaar",
+      "description": "Word lid van een jong en dynamisch team in Brussel. Sales en marketing jobs, opleiding inbegrepen, geen ervaring vereist. Aantrekkelijk salaris + commissies. Solliciteer nu!",
+      "keywords": "sales job brussel, commerciële baan belgië, carrière verkoop jong, job zonder ervaring brussel, werk directe verkoop, baan jongeren brussel"
+    },
+    "jobs": {
+      "title": "Vacatures Verkoop Brussel | RTT Commerce",
+      "description": "Ontdek onze vacatures in sales in Brussel. Jobs voor jongeren 18-30 jaar, volledige opleiding inbegrepen, aantrekkelijk salaris + commissies. Solliciteer in 2 minuten!",
+      "keywords": "vacature verkoop brussel, commerciële job belgië, carrière directe verkoop, sales baan brussel, marketing job brussel"
+    },
+    "apply": {
+      "title": "Solliciteren | Commerciële Job Brussel Zonder Ervaring",
+      "description": "Sollicitatie in 2 minuten. Geen ervaring vereist, opleiding inbegrepen. Reactie binnen 24 uur gegarandeerd. Word lid van ons jonge en dynamische team in Brussel!",
+      "keywords": "solliciteren sales job, sollicitatie commerciële baan, job zonder cv brussel, starter baan verkoop belgië"
+    },
+    "about": {
+      "title": "Over Ons | RTT Commerce - Sales Bedrijf Brussel",
+      "description": "Sinds 2017 leidt RTT Commerce jonge talenten op in directe verkoop. 100+ medewerkers, landelijke aanwezigheid in België. Ontdek onze geschiedenis en waarden.",
+      "keywords": "rtt commerce brussel, directe verkoop bedrijf belgië, marketing bedrijf brussel, werkgever jongeren belgië"
+    },
+    "contact": {
+      "title": "Contact | RTT Commerce Brussel - Louizalaan",
+      "description": "Neem contact op met RTT Commerce. Louizalaan 350, 1050 Brussel. Vragen over onze jobs? Snelle reactie gegarandeerd. Bel ons of stuur een e-mail.",
+      "keywords": "contact rtt commerce, adres rtt commerce brussel, telefoon rtt commerce, email rtt commerce"
+    },
+    "blog": {
+      "title": "Carrière Blog Verkoop | Tips voor Jongeren | RTT Commerce",
+      "description": "Carrière advies, sales tips, ervaringen van medewerkers. Alles om je commerciële carrière in Brussel te starten. Gratis artikelen en gidsen.",
+      "keywords": "blog carrière verkoop, tips commerciële job, sales tips starter, carrière jongeren belgië"
+    },
+    "events": {
+      "title": "Evenementen RTT Commerce | Team Building & Networking België",
+      "description": "Ontdek onze evenementen: team building, conferenties, networking door heel Europa. Word lid van de RTT Commerce community en bouw je netwerk uit.",
+      "keywords": "evenementen rtt commerce, team building brussel, networking verkoop belgië, sales conferentie"
+    }
   }
 }
