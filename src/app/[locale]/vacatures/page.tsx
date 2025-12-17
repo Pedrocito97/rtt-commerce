@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useParams } from "next/navigation";
 import { Section, SectionHeader, fadeInUp } from "@/components/ui/section";
 import { Button } from "@/components/ui/button";
 import {
@@ -16,6 +17,7 @@ import {
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { JobListingEvents } from "@/components/analytics/track-event";
+import { JobPostingsJsonLd, type JobPostingData } from "@/components/seo/json-ld";
 
 const jobs = [
   {
@@ -87,10 +89,21 @@ export default function VacaturesPage() {
   const t = useTranslations("jobs");
   const navT = useTranslations("nav");
   const ctaT = useTranslations("cta");
+  const params = useParams();
+  const locale = (params.locale as string) || "nl";
 
   const [expandedJob, setExpandedJob] = useState<number | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [filterDepartment, setFilterDepartment] = useState("All");
+
+  // Prepare job data for JSON-LD schema
+  const jobPostingData: JobPostingData[] = jobs.map((job) => ({
+    id: String(job.id),
+    title: job.title,
+    description: `${job.description} Requirements: ${job.requirements.join(", ")}. Benefits: ${job.benefits.join(", ")}.`,
+    department: job.department,
+    employmentType: "FULL_TIME" as const,
+  }));
 
   // Track page view on mount
   useEffect(() => {
@@ -142,6 +155,9 @@ export default function VacaturesPage() {
 
   return (
     <>
+      {/* Job Posting Schema for Google Jobs */}
+      <JobPostingsJsonLd jobs={jobPostingData} locale={locale} />
+
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-[var(--primary-blue-light)] to-white overflow-hidden">
         <div className="absolute inset-0 opacity-30">
