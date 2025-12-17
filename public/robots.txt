@@ -1,0 +1,13 @@
+# RTT Commerce - Robots.txt
+# https://www.rtt-commerce.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.rtt-commerce.com/sitemap.xml
+
+# Disallow admin and API routes
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/

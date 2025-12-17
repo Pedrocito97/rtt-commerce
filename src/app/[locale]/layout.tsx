@@ -8,6 +8,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import GoogleAnalytics from "@/components/analytics/google-analytics";
 import CookieConsent from "@/components/analytics/cookie-consent";
+import JsonLdSchemas from "@/components/seo/json-ld";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export default async function LocaleLayout({
     <html lang={locale} className={inter.variable}>
       <body className="antialiased">
         <GoogleAnalytics />
+        <JsonLdSchemas />
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           <main>{children}</main>
