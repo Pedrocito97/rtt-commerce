@@ -381,5 +381,21 @@
     "readyToApply": "Prêt à postuler?",
     "readySubtitle": "Recevez une réponse dans les 24 heures. Commencez votre voyage avec RTT Commerce aujourd'hui.",
     "noResults": "Aucun poste trouvé correspondant à vos critères."
+  },
+  "cookies": {
+    "title": "Nous respectons votre vie privée",
+    "description": "Nous utilisons des cookies pour améliorer votre expérience de navigation, afficher des publicités ou du contenu personnalisé et analyser notre trafic. En cliquant sur \"Tout accepter\", vous consentez à notre utilisation des cookies.",
+    "acceptAll": "Tout accepter",
+    "rejectAll": "Tout refuser",
+    "customize": "Personnaliser",
+    "settingsTitle": "Préférences des cookies",
+    "essential": "Cookies essentiels",
+    "essentialDesc": "Nécessaires au bon fonctionnement du site.",
+    "analytics": "Cookies analytiques",
+    "analyticsDesc": "Nous aident à comprendre comment les visiteurs utilisent notre site.",
+    "marketing": "Cookies marketing",
+    "marketingDesc": "Utilisés pour afficher des publicités personnalisées.",
+    "alwaysOn": "Toujours actif",
+    "savePreferences": "Enregistrer les préférences"
   }
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -26,6 +26,7 @@ import {
   X,
 } from "lucide-react";
 import { countryCodes, defaultCountryCode } from "@/lib/country-codes";
+import { ApplicationEvents } from "@/components/analytics/track-event";
 
 const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
 
@@ -64,6 +65,11 @@ export default function ApplyPage() {
       countryCode: defaultCountryCode,
     },
   });
+
+  // Track when user lands on application page
+  useEffect(() => {
+    ApplicationEvents.beginApplication();
+  }, []);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -148,9 +154,14 @@ export default function ApplyPage() {
         throw new Error(result.error || "Failed to submit application");
       }
 
+      // Track successful submission
+      ApplicationEvents.submitted(data.language, !!cvFile);
       setIsSubmitted(true);
     } catch (error) {
       console.error("Submit error:", error);
+      const errorMessage = error instanceof Error ? error.message : "Unknown error";
+      // Track submission error
+      ApplicationEvents.error(errorMessage);
       setSubmitError(
         error instanceof Error ? error.message : "An error occurred. Please try again."
       );
@@ -168,6 +179,12 @@ export default function ApplyPage() {
 
     const isValid = await trigger(fieldsToValidate);
     if (isValid) {
+      // Track step completion
+      if (step === 1) {
+        ApplicationEvents.step1Complete();
+      } else if (step === 2) {
+        ApplicationEvents.step2Complete(!!cvFile);
+      }
       setStep((prev) => Math.min(prev + 1, totalSteps));
     }
   };

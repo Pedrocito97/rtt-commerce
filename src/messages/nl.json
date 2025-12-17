@@ -381,5 +381,21 @@
     "readyToApply": "Klaar om te solliciteren?",
     "readySubtitle": "Ontvang binnen 24 uur antwoord. Start vandaag je reis met RTT Commerce.",
     "noResults": "Geen posities gevonden die aan je criteria voldoen."
+  },
+  "cookies": {
+    "title": "Wij respecteren uw privacy",
+    "description": "Wij gebruiken cookies om uw browse-ervaring te verbeteren, gepersonaliseerde advertenties of inhoud te tonen en ons verkeer te analyseren. Door op \"Alles accepteren\" te klikken, stemt u in met ons gebruik van cookies.",
+    "acceptAll": "Alles accepteren",
+    "rejectAll": "Alles weigeren",
+    "customize": "Aanpassen",
+    "settingsTitle": "Cookie-voorkeuren",
+    "essential": "Essentiële cookies",
+    "essentialDesc": "Vereist voor het correct functioneren van de website.",
+    "analytics": "Analytische cookies",
+    "analyticsDesc": "Helpen ons te begrijpen hoe bezoekers onze website gebruiken.",
+    "marketing": "Marketing cookies",
+    "marketingDesc": "Gebruikt voor gepersonaliseerde advertenties.",
+    "alwaysOn": "Altijd aan",
+    "savePreferences": "Voorkeuren opslaan"
   }
 }

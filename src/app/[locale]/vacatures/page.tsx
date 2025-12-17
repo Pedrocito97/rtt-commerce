@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Section, SectionHeader, fadeInUp } from "@/components/ui/section";
 import { Button } from "@/components/ui/button";
@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
+import { JobListingEvents } from "@/components/analytics/track-event";
 
 const jobs = [
   {
@@ -91,6 +92,45 @@ export default function VacaturesPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [filterDepartment, setFilterDepartment] = useState("All");
 
+  // Track page view on mount
+  useEffect(() => {
+    JobListingEvents.viewJobListing();
+  }, []);
+
+  // Track search with debounce
+  useEffect(() => {
+    if (!searchTerm) return;
+
+    const timer = setTimeout(() => {
+      JobListingEvents.search(searchTerm);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [searchTerm]);
+
+  // Track filter changes
+  const handleFilterChange = useCallback((department: string) => {
+    setFilterDepartment(department);
+    if (department !== "All") {
+      JobListingEvents.filter(department);
+    }
+  }, []);
+
+  // Track job card expansion
+  const handleJobClick = useCallback((jobId: number, jobTitle: string) => {
+    const isExpanding = expandedJob !== jobId;
+    setExpandedJob(isExpanding ? jobId : null);
+    if (isExpanding) {
+      JobListingEvents.expandJob(jobTitle);
+    }
+  }, [expandedJob]);
+
+  // Track apply button click
+  const handleApplyClick = useCallback((jobTitle: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    JobListingEvents.applyClick(jobTitle);
+  }, []);
+
   const filteredJobs = jobs.filter((job) => {
     const matchesSearch = job.title
       .toLowerCase()
@@ -149,7 +189,7 @@ export default function VacaturesPage() {
             <Filter className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--gray-400)]" />
             <select
               value={filterDepartment}
-              onChange={(e) => setFilterDepartment(e.target.value)}
+              onChange={(e) => handleFilterChange(e.target.value)}
               className="pl-12 pr-8 py-3 rounded-xl border border-[var(--gray-200)] focus:border-[var(--primary-blue)] focus:ring-2 focus:ring-[var(--primary-blue)]/20 outline-none transition-all appearance-none bg-white"
             >
               <option value="All">{t("allDepartments")}</option>
@@ -172,9 +212,7 @@ export default function VacaturesPage() {
             >
               <div
                 className="p-6 cursor-pointer"
-                onClick={() =>
-                  setExpandedJob(expandedJob === job.id ? null : job.id)
-                }
+                onClick={() => handleJobClick(job.id, job.title)}
               >
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                   <div>
@@ -201,7 +239,7 @@ export default function VacaturesPage() {
                       <Button
                         variant="primary"
                         size="sm"
-                        onClick={(e) => e.stopPropagation()}
+                        onClick={(e) => handleApplyClick(job.title, e)}
                       >
                         {t("applyNow")}
                       </Button>

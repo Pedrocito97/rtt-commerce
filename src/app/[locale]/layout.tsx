@@ -6,6 +6,8 @@ import { Inter } from "next/font/google";
 import "../globals.css";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import GoogleAnalytics from "@/components/analytics/google-analytics";
+import CookieConsent from "@/components/analytics/cookie-consent";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,10 +37,12 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={inter.variable}>
       <body className="antialiased">
+        <GoogleAnalytics />
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           <main>{children}</main>
           <Footer />
+          <CookieConsent />
         </NextIntlClientProvider>
       </body>
     </html>
