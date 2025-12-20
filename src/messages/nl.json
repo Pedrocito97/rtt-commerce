@@ -398,6 +398,138 @@
     "alwaysOn": "Altijd aan",
     "savePreferences": "Voorkeuren opslaan"
   },
+  "privacy": {
+    "title": "Privacybeleid",
+    "subtitle": "Bij RTT Commerce zetten we ons in voor de bescherming van uw privacy en persoonsgegevens.",
+    "lastUpdated": "Laatst bijgewerkt",
+    "lastUpdatedDate": "20 december 2024",
+    "introduction": "RTT Commerce BV (\"wij\", \"ons\" of \"RTT Commerce\") zet zich in voor de bescherming van de privacy van onze gebruikers, sollicitanten en zakelijke partners. Dit privacybeleid legt uit hoe wij uw persoonlijke informatie verzamelen, gebruiken, opslaan en beschermen in overeenstemming met de Algemene Verordening Gegevensbescherming (AVG) en de toepasselijke Belgische wetgeving.",
+    "sections": {
+      "dataCollection": {
+        "title": "Gegevens die we verzamelen",
+        "content": [
+          "We verzamelen verschillende soorten persoonsgegevens afhankelijk van uw interactie met onze diensten. Bij uw sollicitatie verzamelen we uw identificatiegegevens (voornaam, achternaam), contactgegevens (e-mail, telefoon), CV en sollicitatiedocumenten, evenals uw taalvoorkeuren.",
+          "Bij het browsen op onze website kunnen we technische gegevens verzamelen zoals uw IP-adres, browsertype, bezochte pagina's en bezoekduur. Deze informatie helpt ons de gebruikerservaring te verbeteren.",
+          "Als u contact met ons opneemt, bewaren we de inhoud van uw berichten evenals alle informatie die u ervoor kiest met ons te delen."
+        ]
+      },
+      "dataUsage": {
+        "title": "Hoe we uw gegevens gebruiken",
+        "content": [
+          "Uw persoonsgegevens worden gebruikt om sollicitaties te verwerken en te beheren, met u te communiceren over professionele kansen, onze diensten en website te verbeteren, en te voldoen aan onze wettelijke verplichtingen.",
+          "We gebruiken uw gegevens ook om u informatie te sturen over onze evenementen en carrièremogelijkheden, alleen als u uw toestemming hebt gegeven. U kunt zich op elk moment afmelden.",
+          "We verkopen nooit uw persoonsgegevens aan derden. Uw informatie blijft strikt vertrouwelijk en wordt alleen gedeeld met teamleden die betrokken zijn bij het wervingsproces."
+        ]
+      },
+      "dataSecurity": {
+        "title": "Gegevensbeveiliging",
+        "content": [
+          "We implementeren passende technische en organisatorische beveiligingsmaatregelen om uw persoonsgegevens te beschermen tegen verlies, ongeautoriseerde toegang, wijziging of openbaarmaking.",
+          "Onze systemen worden regelmatig bijgewerkt en onze medewerkers zijn getraind in best practices voor gegevensbescherming. Toegang tot uw gegevens is strikt beperkt tot degenen die het nodig hebben om hun taken uit te voeren.",
+          "In het geval van een datalek dat een risico kan vormen voor uw rechten en vrijheden, zullen we u en de bevoegde gegevensbeschermingsautoriteit informeren binnen de wettelijk voorgeschreven termijnen."
+        ]
+      },
+      "cookies": {
+        "title": "Cookies en vergelijkbare technologieën",
+        "content": [
+          "Onze website gebruikt cookies om uw browse-ervaring te verbeteren. Essentiële cookies zijn noodzakelijk voor het functioneren van de website en kunnen niet worden uitgeschakeld.",
+          "Analytische cookies helpen ons te begrijpen hoe bezoekers onze website gebruiken, waardoor we onze diensten continu kunnen verbeteren. Marketing cookies worden gebruikt om u gepersonaliseerde content aan te bieden.",
+          "U kunt uw cookievoorkeuren op elk moment beheren via onze toestemmingsbanner of uw browserinstellingen. Voor meer informatie verwijzen we u naar ons gedetailleerde cookiebeleid."
+        ]
+      },
+      "retention": {
+        "title": "Bewaartermijn",
+        "content": [
+          "We bewaren uw persoonsgegevens zo lang als nodig is voor de doeleinden beschreven in dit beleid of om te voldoen aan onze wettelijke verplichtingen.",
+          "Sollicitatiegegevens worden bewaard voor een maximale periode van 2 jaar na het laatste contact, tenzij u ons vraagt deze eerder te verwijderen of u ons toestemming geeft voor langere bewaring.",
+          "Browse- en analytische gegevens worden over het algemeen maximaal 13 maanden bewaard in overeenstemming met CNIL-aanbevelingen."
+        ]
+      },
+      "rights": {
+        "title": "Uw rechten",
+        "content": [
+          "Onder de AVG heeft u uitgebreide rechten met betrekking tot uw persoonsgegevens. U heeft het recht om toegang te krijgen tot uw gegevens, deze te rectificeren als ze onjuist zijn, en in bepaalde omstandigheden verwijdering te verzoeken.",
+          "U kunt ook verzoeken om beperking van de verwerking van uw gegevens, bezwaar maken tegen bepaalde verwerkingen, en verzoeken om overdraagbaarheid van uw gegevens naar een andere verwerkingsverantwoordelijke.",
+          "Om deze rechten uit te oefenen, neem contact met ons op via privacy@rtt-commerce.com. We zullen binnen een maand op uw verzoek reageren. Als u van mening bent dat uw rechten niet worden gerespecteerd, kunt u een klacht indienen bij de Belgische Gegevensbeschermingsautoriteit."
+        ]
+      }
+    },
+    "contact": {
+      "title": "Neem contact op",
+      "description": "Als u vragen heeft over dit privacybeleid of de verwerking van uw persoonsgegevens, aarzel dan niet om contact met ons op te nemen.",
+      "link": "Ga naar contactpagina"
+    }
+  },
+  "terms": {
+    "title": "Servicevoorwaarden",
+    "subtitle": "Lees deze voorwaarden aandachtig door voordat u onze website en diensten gebruikt.",
+    "lastUpdated": "Laatst bijgewerkt",
+    "lastUpdatedDate": "20 december 2024",
+    "introduction": "Deze servicevoorwaarden regelen uw toegang tot en gebruik van de website van RTT Commerce BV en onze diensten. Door toegang te krijgen tot onze website of gebruik te maken van onze diensten, gaat u akkoord met deze voorwaarden. Als u niet akkoord gaat met deze voorwaarden, maak dan geen gebruik van onze website.",
+    "sections": {
+      "acceptance": {
+        "title": "Aanvaarding van voorwaarden",
+        "content": [
+          "Door toegang te krijgen tot deze website bevestigt u dat u deze servicevoorwaarden evenals ons privacybeleid hebt gelezen, begrepen en ermee akkoord gaat.",
+          "Deze voorwaarden vormen een juridisch bindende overeenkomst tussen u en RTT Commerce BV. Als u deze website bezoekt namens een bedrijf of andere entiteit, verklaart u dat u de nodige bevoegdheid heeft om die entiteit te binden.",
+          "We behouden ons het recht voor om deze voorwaarden op elk moment te wijzigen. Wijzigingen worden van kracht na publicatie op de website. Uw voortgezet gebruik van de website na dergelijke wijzigingen vormt uw aanvaarding van de nieuwe voorwaarden."
+        ]
+      },
+      "services": {
+        "title": "Beschrijving van diensten",
+        "content": [
+          "RTT Commerce BV is een bedrijf gespecialiseerd in verkoop- en marketingdiensten in België. Onze website biedt informatie over onze diensten, vacatures en evenementen.",
+          "We bieden carrièremogelijkheden in directe verkoop en marketing voor jonge professionals. Ons platform stelt kandidaten in staat om sollicitaties in te dienen en informatie te ontvangen over beschikbare functies.",
+          "We organiseren ook netwerk- en professionele trainingsevenementen. Informatie over deze evenementen wordt gepubliceerd op onze website en kan zonder voorafgaande kennisgeving worden gewijzigd."
+        ]
+      },
+      "obligations": {
+        "title": "Verplichtingen van de gebruiker",
+        "content": [
+          "U gaat ermee akkoord deze website alleen te gebruiken voor wettige doeleinden en op een manier die geen inbreuk maakt op de rechten van anderen of het gebruik van de website door andere gebruikers beperkt of verhindert.",
+          "Bij het indienen van een sollicitatie of een ander formulier gaat u ermee akkoord nauwkeurige, volledige en actuele informatie te verstrekken. U bent verantwoordelijk voor de juistheid van de informatie die u aan ons verstrekt.",
+          "U gaat ermee akkoord geen geautomatiseerde tools te gebruiken om toegang te krijgen tot de website, niet te proberen de beveiliging van de website te compromitteren, en de website niet te gebruiken om schadelijke of ongewenste content te verspreiden."
+        ]
+      },
+      "prohibited": {
+        "title": "Verboden activiteiten",
+        "content": [
+          "Het is strikt verboden om deze website te gebruiken voor frauduleuze doeleinden, om valse of misleidende informatie te verspreiden, of voor enige handeling die RTT Commerce of derden zou kunnen schaden.",
+          "U mag de inhoud van deze website niet kopiëren, reproduceren, wijzigen, distribueren of commercieel exploiteren zonder onze voorafgaande schriftelijke toestemming. Dit omvat teksten, afbeeldingen, logo's en elk ander element dat beschermd is door intellectuele eigendomsrechten.",
+          "Elke poging om ongeautoriseerde toegang te krijgen tot onze systemen, persoonsgegevens van andere gebruikers te verzamelen, of de normale werking van de website te verstoren is strikt verboden en kan resulteren in juridische stappen."
+        ]
+      },
+      "liability": {
+        "title": "Beperking van aansprakelijkheid",
+        "content": [
+          "Deze website en de inhoud ervan worden geleverd \"zoals ze zijn\" zonder enige garantie, expliciet of impliciet. RTT Commerce garandeert niet dat de website altijd beschikbaar, foutloos of virusvrij zal zijn.",
+          "Voor zover wettelijk toegestaan, wijst RTT Commerce alle aansprakelijkheid af voor directe, indirecte, incidentele of gevolgschade voortvloeiend uit het gebruik of de onmogelijkheid om deze website te gebruiken.",
+          "Links naar websites van derden worden uitsluitend voor uw gemak aangeboden. We hebben geen controle over deze websites en wijzen alle verantwoordelijkheid af voor hun inhoud of privacypraktijken."
+        ]
+      },
+      "modifications": {
+        "title": "Wijzigingen aan website en diensten",
+        "content": [
+          "We behouden ons het recht voor om elk aspect van de website of onze diensten op elk moment en zonder kennisgeving te wijzigen, op te schorten of te beëindigen.",
+          "We kunnen website-inhoud bijwerken, beschikbare functies wijzigen, of de presentatie en het ontwerp veranderen zonder voorafgaande kennisgeving.",
+          "In het geval van een significante wijziging van deze servicevoorwaarden zullen we redelijke inspanningen leveren om u te informeren, bijvoorbeeld door een bericht op onze website te plaatsen."
+        ]
+      },
+      "governing": {
+        "title": "Toepasselijk recht en jurisdictie",
+        "content": [
+          "Deze servicevoorwaarden worden beheerst door het Belgische recht. Elk geschil met betrekking tot deze voorwaarden valt onder de exclusieve bevoegdheid van de rechtbanken van Brussel, België.",
+          "Als een bepaling van deze voorwaarden ongeldig of niet-afdwingbaar wordt bevonden, blijven de overige bepalingen volledig van kracht.",
+          "Het niet uitoefenen van een recht onder deze voorwaarden vormt geen afstand van dat recht. Deze voorwaarden vertegenwoordigen de volledige overeenkomst tussen u en RTT Commerce met betrekking tot het gebruik van de website."
+        ]
+      }
+    },
+    "contact": {
+      "title": "Juridische vragen",
+      "description": "Als u vragen heeft over deze servicevoorwaarden, neem dan contact met ons op.",
+      "link": "Ga naar contactpagina"
+    }
+  },
   "metadata": {
     "home": {
       "title": "RTT Commerce | Sales Jobs Brussel voor Jongeren 18-30 jaar",
@@ -433,6 +565,16 @@
       "title": "Evenementen RTT Commerce | Team Building & Networking België",
       "description": "Ontdek onze evenementen: team building, conferenties, networking door heel Europa. Word lid van de RTT Commerce community en bouw je netwerk uit.",
       "keywords": "evenementen rtt commerce, team building brussel, networking verkoop belgië, sales conferentie"
+    },
+    "privacy": {
+      "title": "Privacybeleid | RTT Commerce",
+      "description": "Ontdek hoe RTT Commerce uw persoonsgegevens beschermt. Ons privacybeleid beschrijft de verzameling, het gebruik en de bescherming van uw informatie in overeenstemming met de AVG.",
+      "keywords": "rtt commerce privacybeleid, bescherming persoonsgegevens, avg belgië, rtt commerce privacy"
+    },
+    "terms": {
+      "title": "Servicevoorwaarden | RTT Commerce",
+      "description": "Lees de servicevoorwaarden van de RTT Commerce website. Informatie over uw rechten, verplichtingen en de regels voor het gebruik van onze diensten.",
+      "keywords": "rtt commerce servicevoorwaarden, juridische kennisgeving, gebruiksregels website, servicevoorwaarden belgië"
     }
   }
 }

@@ -398,6 +398,138 @@
     "alwaysOn": "Always on",
     "savePreferences": "Save Preferences"
   },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "At RTT Commerce, we are committed to protecting your privacy and personal data.",
+    "lastUpdated": "Last updated",
+    "lastUpdatedDate": "December 20, 2024",
+    "introduction": "RTT Commerce BV (\"we\", \"our\" or \"RTT Commerce\") is committed to protecting the privacy of our users, applicants and business partners. This privacy policy explains how we collect, use, store and protect your personal information in accordance with the General Data Protection Regulation (GDPR) and applicable Belgian legislation.",
+    "sections": {
+      "dataCollection": {
+        "title": "Data we collect",
+        "content": [
+          "We collect different types of personal data depending on your interaction with our services. When you apply, we collect your identification information (first name, last name), contact details (email, phone), CV and application documents, as well as your language preferences.",
+          "When browsing our website, we may collect technical data such as your IP address, browser type, pages visited and duration of visits. This information helps us improve the user experience.",
+          "If you contact us, we retain the content of your messages as well as any information you choose to share with us."
+        ]
+      },
+      "dataUsage": {
+        "title": "How we use your data",
+        "content": [
+          "Your personal data is used to process and manage job applications, communicate with you about professional opportunities, improve our services and website, and comply with our legal obligations.",
+          "We also use your data to send you information about our events and career opportunities, only if you have given your consent. You can unsubscribe at any time.",
+          "We never sell your personal data to third parties. Your information remains strictly confidential and is only shared with team members involved in the recruitment process."
+        ]
+      },
+      "dataSecurity": {
+        "title": "Data security",
+        "content": [
+          "We implement appropriate technical and organizational security measures to protect your personal data against loss, unauthorized access, modification or disclosure.",
+          "Our systems are regularly updated and our employees are trained in best practices for data protection. Access to your data is strictly limited to those who need it to perform their duties.",
+          "In the event of a data breach likely to present a risk to your rights and freedoms, we will inform you and the competent data protection authority within the time limits prescribed by law."
+        ]
+      },
+      "cookies": {
+        "title": "Cookies and similar technologies",
+        "content": [
+          "Our website uses cookies to improve your browsing experience. Essential cookies are necessary for the website to function and cannot be disabled.",
+          "Analytics cookies help us understand how visitors use our website, allowing us to continuously improve our services. Marketing cookies are used to offer you personalized content.",
+          "You can manage your cookie preferences at any time via our consent banner or your browser settings. For more information, please see our detailed cookie policy."
+        ]
+      },
+      "retention": {
+        "title": "Data retention",
+        "content": [
+          "We retain your personal data for as long as necessary for the purposes described in this policy or to comply with our legal obligations.",
+          "Application data is retained for a maximum period of 2 years after the last contact, unless you ask us to delete it earlier or you give us your consent for longer retention.",
+          "Browsing and analytics data is generally retained for a maximum of 13 months in accordance with CNIL recommendations."
+        ]
+      },
+      "rights": {
+        "title": "Your rights",
+        "content": [
+          "Under the GDPR, you have extensive rights over your personal data. You have the right to access your data, rectify it if it is inaccurate, and request its deletion in certain circumstances.",
+          "You can also request the restriction of processing of your data, object to certain processing, and request the portability of your data to another controller.",
+          "To exercise these rights, contact us at privacy@rtt-commerce.com. We will respond to your request within one month. If you believe your rights are not being respected, you can file a complaint with the Belgian Data Protection Authority."
+        ]
+      }
+    },
+    "contact": {
+      "title": "Contact us",
+      "description": "If you have any questions about this privacy policy or the processing of your personal data, please do not hesitate to contact us.",
+      "link": "Go to contact page"
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "subtitle": "Please read these terms carefully before using our website and services.",
+    "lastUpdated": "Last updated",
+    "lastUpdatedDate": "December 20, 2024",
+    "introduction": "These terms of service govern your access to and use of the RTT Commerce BV website and our services. By accessing our website or using our services, you agree to be bound by these terms. If you do not agree to these terms, please do not use our website.",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptance of terms",
+        "content": [
+          "By accessing this website, you confirm that you have read, understood and agreed to be bound by these terms of service as well as our privacy policy.",
+          "These terms constitute a legally binding agreement between you and RTT Commerce BV. If you access this website on behalf of a company or other entity, you represent that you have the necessary authority to bind that entity.",
+          "We reserve the right to modify these terms at any time. Changes will take effect upon posting on the website. Your continued use of the website after such changes constitutes your acceptance of the new terms."
+        ]
+      },
+      "services": {
+        "title": "Description of services",
+        "content": [
+          "RTT Commerce BV is a company specializing in sales and marketing services in Belgium. Our website provides information about our services, job opportunities and events.",
+          "We offer career opportunities in direct sales and marketing for young professionals. Our platform allows candidates to submit applications and receive information about available positions.",
+          "We also organize networking and professional training events. Information about these events is published on our website and may be subject to change without notice."
+        ]
+      },
+      "obligations": {
+        "title": "User obligations",
+        "content": [
+          "You agree to use this website only for lawful purposes and in a manner that does not infringe the rights of others or restrict or prevent the use of the website by other users.",
+          "When submitting an application or any other form, you agree to provide accurate, complete and up-to-date information. You are responsible for the accuracy of the information you provide to us.",
+          "You agree not to use automated tools to access the website, not to attempt to compromise the security of the website, and not to use the website to distribute malicious or unsolicited content."
+        ]
+      },
+      "prohibited": {
+        "title": "Prohibited activities",
+        "content": [
+          "It is strictly prohibited to use this website for fraudulent purposes, to disseminate false or misleading information, or for any act that could harm RTT Commerce or third parties.",
+          "You may not copy, reproduce, modify, distribute or commercially exploit the content of this website without our prior written permission. This includes text, images, logos and any other element protected by intellectual property rights.",
+          "Any attempt to gain unauthorized access to our systems, collect personal data from other users, or interfere with the normal operation of the website is strictly prohibited and may result in legal action."
+        ]
+      },
+      "liability": {
+        "title": "Limitation of liability",
+        "content": [
+          "This website and its content are provided \"as is\" without any warranty, express or implied. RTT Commerce does not guarantee that the website will always be available, error-free or virus-free.",
+          "To the extent permitted by law, RTT Commerce disclaims all liability for direct, indirect, incidental or consequential damages arising from the use or inability to use this website.",
+          "Links to third-party websites are provided for your convenience only. We do not control these websites and disclaim all responsibility for their content or privacy practices."
+        ]
+      },
+      "modifications": {
+        "title": "Modifications to website and services",
+        "content": [
+          "We reserve the right to modify, suspend or discontinue any aspect of the website or our services at any time and without notice.",
+          "We may update website content, modify available features, or change the presentation and design without prior notification.",
+          "In the event of a significant change to these terms of service, we will make reasonable efforts to inform you, for example by posting a notice on our website."
+        ]
+      },
+      "governing": {
+        "title": "Governing law and jurisdiction",
+        "content": [
+          "These terms of service are governed by Belgian law. Any dispute relating to these terms will be subject to the exclusive jurisdiction of the courts of Brussels, Belgium.",
+          "If any provision of these terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect.",
+          "Failure to exercise a right under these terms does not constitute a waiver of that right. These terms represent the entire agreement between you and RTT Commerce regarding the use of the website."
+        ]
+      }
+    },
+    "contact": {
+      "title": "Legal questions",
+      "description": "If you have any questions about these terms of service, please contact us.",
+      "link": "Go to contact page"
+    }
+  },
   "metadata": {
     "home": {
       "title": "RTT Commerce | Sales Jobs Brussels for Young People 18-30",
@@ -433,6 +565,16 @@
       "title": "RTT Commerce Events | Team Building & Networking Belgium",
       "description": "Discover our events: team building, conferences, networking across Europe. Join the RTT Commerce community and build your network.",
       "keywords": "rtt commerce events, team building brussels, sales networking belgium, sales conference"
+    },
+    "privacy": {
+      "title": "Privacy Policy | RTT Commerce",
+      "description": "Learn how RTT Commerce protects your personal data. Our privacy policy details the collection, use and protection of your information in accordance with GDPR.",
+      "keywords": "rtt commerce privacy policy, personal data protection, gdpr belgium, rtt commerce privacy"
+    },
+    "terms": {
+      "title": "Terms of Service | RTT Commerce",
+      "description": "Read the terms of service for the RTT Commerce website. Information about your rights, obligations and the rules for using our services.",
+      "keywords": "rtt commerce terms of service, legal notice, website usage rules, service terms belgium"
     }
   }
 }

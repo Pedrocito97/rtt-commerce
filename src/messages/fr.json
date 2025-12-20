@@ -398,6 +398,138 @@
     "alwaysOn": "Toujours actif",
     "savePreferences": "Enregistrer les préférences"
   },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "subtitle": "Chez RTT Commerce, nous nous engageons à protéger votre vie privée et vos données personnelles.",
+    "lastUpdated": "Dernière mise à jour",
+    "lastUpdatedDate": "20 décembre 2024",
+    "introduction": "RTT Commerce BV (\"nous\", \"notre\" ou \"RTT Commerce\") s'engage à protéger la vie privée de nos utilisateurs, candidats et partenaires commerciaux. Cette politique de confidentialité explique comment nous collectons, utilisons, stockons et protégeons vos informations personnelles conformément au Règlement Général sur la Protection des Données (RGPD) et à la législation belge applicable.",
+    "sections": {
+      "dataCollection": {
+        "title": "Données que nous collectons",
+        "content": [
+          "Nous collectons différents types de données personnelles selon votre interaction avec nos services. Lors de votre candidature, nous recueillons vos informations d'identification (nom, prénom), vos coordonnées (email, téléphone), votre CV et documents de candidature, ainsi que vos préférences linguistiques.",
+          "Lors de votre navigation sur notre site, nous pouvons collecter des données techniques telles que votre adresse IP, le type de navigateur, les pages visitées et la durée des visites. Ces informations nous aident à améliorer l'expérience utilisateur.",
+          "Si vous nous contactez, nous conservons le contenu de vos messages ainsi que toutes les informations que vous choisissez de partager avec nous."
+        ]
+      },
+      "dataUsage": {
+        "title": "Utilisation de vos données",
+        "content": [
+          "Vos données personnelles sont utilisées pour traiter et gérer les candidatures d'emploi, communiquer avec vous concernant des opportunités professionnelles, améliorer nos services et notre site web, et respecter nos obligations légales.",
+          "Nous utilisons également vos données pour vous envoyer des informations sur nos événements et opportunités de carrière, uniquement si vous avez donné votre consentement. Vous pouvez vous désabonner à tout moment.",
+          "Nous ne vendons jamais vos données personnelles à des tiers. Vos informations restent strictement confidentielles et sont uniquement partagées avec les membres de notre équipe impliqués dans le processus de recrutement."
+        ]
+      },
+      "dataSecurity": {
+        "title": "Sécurité des données",
+        "content": [
+          "Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles appropriées pour protéger vos données personnelles contre la perte, l'accès non autorisé, la modification ou la divulgation.",
+          "Nos systèmes sont régulièrement mis à jour et nos employés sont formés aux meilleures pratiques en matière de protection des données. L'accès à vos données est strictement limité aux personnes qui en ont besoin pour accomplir leurs fonctions.",
+          "En cas de violation de données susceptible de présenter un risque pour vos droits et libertés, nous vous en informerons ainsi que l'autorité de protection des données compétente dans les délais prescrits par la loi."
+        ]
+      },
+      "cookies": {
+        "title": "Cookies et technologies similaires",
+        "content": [
+          "Notre site utilise des cookies pour améliorer votre expérience de navigation. Les cookies essentiels sont nécessaires au fonctionnement du site et ne peuvent pas être désactivés.",
+          "Les cookies analytiques nous aident à comprendre comment les visiteurs utilisent notre site, ce qui nous permet d'améliorer continuellement nos services. Les cookies marketing sont utilisés pour vous proposer des contenus personnalisés.",
+          "Vous pouvez gérer vos préférences de cookies à tout moment via notre bandeau de consentement ou les paramètres de votre navigateur. Pour plus d'informations, consultez notre politique de cookies détaillée."
+        ]
+      },
+      "retention": {
+        "title": "Durée de conservation",
+        "content": [
+          "Nous conservons vos données personnelles aussi longtemps que nécessaire pour les finalités décrites dans cette politique ou pour respecter nos obligations légales.",
+          "Les données de candidature sont conservées pendant une période maximale de 2 ans après le dernier contact, sauf si vous nous demandez de les supprimer plus tôt ou si vous nous donnez votre consentement pour une conservation plus longue.",
+          "Les données de navigation et analytiques sont généralement conservées pendant 13 mois maximum conformément aux recommandations de la CNIL."
+        ]
+      },
+      "rights": {
+        "title": "Vos droits",
+        "content": [
+          "Conformément au RGPD, vous disposez de droits étendus sur vos données personnelles. Vous avez le droit d'accéder à vos données, de les rectifier si elles sont inexactes, et de demander leur suppression dans certaines circonstances.",
+          "Vous pouvez également demander la limitation du traitement de vos données, vous opposer à certains traitements, et demander la portabilité de vos données vers un autre responsable de traitement.",
+          "Pour exercer ces droits, contactez-nous à privacy@rtt-commerce.com. Nous répondrons à votre demande dans un délai d'un mois. Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de l'Autorité de Protection des Données belge."
+        ]
+      }
+    },
+    "contact": {
+      "title": "Nous contacter",
+      "description": "Pour toute question concernant cette politique de confidentialité ou le traitement de vos données personnelles, n'hésitez pas à nous contacter.",
+      "link": "Aller à la page de contact"
+    }
+  },
+  "terms": {
+    "title": "Conditions d'Utilisation",
+    "subtitle": "Veuillez lire attentivement ces conditions avant d'utiliser notre site web et nos services.",
+    "lastUpdated": "Dernière mise à jour",
+    "lastUpdatedDate": "20 décembre 2024",
+    "introduction": "Les présentes conditions d'utilisation régissent votre accès et votre utilisation du site web de RTT Commerce BV et de nos services. En accédant à notre site ou en utilisant nos services, vous acceptez d'être lié par ces conditions. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser notre site web.",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptation des conditions",
+        "content": [
+          "En accédant à ce site web, vous confirmez que vous avez lu, compris et accepté d'être lié par les présentes conditions d'utilisation ainsi que par notre politique de confidentialité.",
+          "Ces conditions constituent un accord juridiquement contraignant entre vous et RTT Commerce BV. Si vous accédez à ce site au nom d'une entreprise ou d'une autre entité, vous déclarez avoir l'autorité nécessaire pour engager cette entité.",
+          "Nous nous réservons le droit de modifier ces conditions à tout moment. Les modifications entreront en vigueur dès leur publication sur le site. Votre utilisation continue du site après de telles modifications constitue votre acceptation des nouvelles conditions."
+        ]
+      },
+      "services": {
+        "title": "Description des services",
+        "content": [
+          "RTT Commerce BV est une entreprise spécialisée dans les services de vente et de marketing en Belgique. Notre site web fournit des informations sur nos services, nos opportunités d'emploi et nos événements.",
+          "Nous proposons des opportunités de carrière dans la vente directe et le marketing pour les jeunes professionnels. Notre plateforme permet aux candidats de soumettre leur candidature et de recevoir des informations sur les postes disponibles.",
+          "Nous organisons également des événements de networking et de formation professionnelle. Les informations sur ces événements sont publiées sur notre site et peuvent être sujettes à modification sans préavis."
+        ]
+      },
+      "obligations": {
+        "title": "Obligations de l'utilisateur",
+        "content": [
+          "Vous vous engagez à utiliser ce site web uniquement à des fins légales et d'une manière qui ne porte pas atteinte aux droits d'autrui ni ne restreint ou n'empêche l'utilisation du site par d'autres utilisateurs.",
+          "Lors de la soumission d'une candidature ou de tout autre formulaire, vous vous engagez à fournir des informations exactes, complètes et à jour. Vous êtes responsable de la véracité des informations que vous nous transmettez.",
+          "Vous acceptez de ne pas utiliser d'outils automatisés pour accéder au site, de ne pas tenter de compromettre la sécurité du site, et de ne pas utiliser le site pour distribuer du contenu malveillant ou non sollicité."
+        ]
+      },
+      "prohibited": {
+        "title": "Activités interdites",
+        "content": [
+          "Il est strictement interdit d'utiliser ce site web à des fins frauduleuses, pour diffuser des informations fausses ou trompeuses, ou pour tout acte qui pourrait nuire à RTT Commerce ou à des tiers.",
+          "Vous ne pouvez pas copier, reproduire, modifier, distribuer ou exploiter commercialement le contenu de ce site sans notre autorisation écrite préalable. Cela inclut les textes, images, logos et tout autre élément protégé par des droits de propriété intellectuelle.",
+          "Toute tentative d'accès non autorisé à nos systèmes, de collecte de données personnelles d'autres utilisateurs, ou d'interférence avec le fonctionnement normal du site est strictement interdite et peut entraîner des poursuites judiciaires."
+        ]
+      },
+      "liability": {
+        "title": "Limitation de responsabilité",
+        "content": [
+          "Ce site web et son contenu sont fournis \"tels quels\" sans aucune garantie, expresse ou implicite. RTT Commerce ne garantit pas que le site sera toujours disponible, exempt d'erreurs ou de virus.",
+          "Dans les limites permises par la loi, RTT Commerce décline toute responsabilité pour les dommages directs, indirects, accessoires ou consécutifs résultant de l'utilisation ou de l'impossibilité d'utiliser ce site web.",
+          "Les liens vers des sites web tiers sont fournis uniquement pour votre commodité. Nous ne contrôlons pas ces sites et déclinons toute responsabilité quant à leur contenu ou leurs pratiques de confidentialité."
+        ]
+      },
+      "modifications": {
+        "title": "Modifications du site et des services",
+        "content": [
+          "Nous nous réservons le droit de modifier, suspendre ou interrompre tout aspect du site web ou de nos services à tout moment et sans préavis.",
+          "Nous pouvons mettre à jour le contenu du site, modifier les fonctionnalités disponibles, ou changer la présentation et le design sans notification préalable.",
+          "En cas de modification importante de ces conditions d'utilisation, nous ferons des efforts raisonnables pour vous en informer, par exemple en publiant un avis sur notre site web."
+        ]
+      },
+      "governing": {
+        "title": "Droit applicable et juridiction",
+        "content": [
+          "Les présentes conditions d'utilisation sont régies par le droit belge. Tout litige relatif à ces conditions sera soumis à la compétence exclusive des tribunaux de Bruxelles, Belgique.",
+          "Si une disposition de ces conditions est jugée invalide ou inapplicable, les autres dispositions resteront pleinement en vigueur et de plein effet.",
+          "Le fait de ne pas exercer un droit prévu par ces conditions ne constitue pas une renonciation à ce droit. Ces conditions représentent l'intégralité de l'accord entre vous et RTT Commerce concernant l'utilisation du site web."
+        ]
+      }
+    },
+    "contact": {
+      "title": "Questions juridiques",
+      "description": "Pour toute question concernant ces conditions d'utilisation, veuillez nous contacter.",
+      "link": "Aller à la page de contact"
+    }
+  },
   "metadata": {
     "home": {
       "title": "RTT Commerce | Jobs Vente Bruxelles pour Jeunes 18-30 ans",
@@ -433,6 +565,16 @@
       "title": "Événements RTT Commerce | Team Building & Networking Belgique",
       "description": "Découvrez nos événements: team building, conférences, networking à travers l'Europe. Rejoignez la communauté RTT Commerce et développez votre réseau.",
       "keywords": "événements rtt commerce, team building bruxelles, networking vente belgique, conférence sales"
+    },
+    "privacy": {
+      "title": "Politique de Confidentialité | RTT Commerce",
+      "description": "Découvrez comment RTT Commerce protège vos données personnelles. Notre politique de confidentialité détaille la collecte, l'utilisation et la protection de vos informations conformément au RGPD.",
+      "keywords": "politique confidentialité rtt commerce, protection données personnelles, rgpd belgique, vie privée rtt commerce"
+    },
+    "terms": {
+      "title": "Conditions d'Utilisation | RTT Commerce",
+      "description": "Consultez les conditions d'utilisation du site RTT Commerce. Informations sur vos droits, obligations et les règles d'utilisation de nos services.",
+      "keywords": "conditions utilisation rtt commerce, mentions légales, règles utilisation site, termes service belgique"
     }
   }
 }
